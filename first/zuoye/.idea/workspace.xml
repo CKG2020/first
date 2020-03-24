@@ -1,0 +1,1028 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7c5112fb-f0a3-495d-99db-1f07c1506f8e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/activation_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/asm_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/hadoop_common_2_7_7_tests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/hadoop_hdfs_2_7_7_tests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/jdiff.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Holiday/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Holiday/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Holiday/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Holiday/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Holiday/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Holiday/out/production/untitled104/Client.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Holiday/out/production/untitled104/MySingleton.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Holiday/out/production/untitled104/MySingleton2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Holiday/src/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Holiday/src/MySingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Holiday/src/MySingleton2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Holiday/src/com/company/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Holiday/untitled104.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SCALA/.idea/libraries/activation_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SCALA/.idea/libraries/asm_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SCALA/.idea/libraries/hadoop_common_2_7_7_tests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SCALA/.idea/libraries/hadoop_hdfs_2_7_7_tests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SCALA/.idea/libraries/jdiff.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SCALA/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SCALA/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SCALA/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SCALA/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SCALA/SCALA.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SCALA/out/production/SCALA/scala1$$anonfun$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SCALA/out/production/SCALA/scala1$$anonfun$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SCALA/out/production/SCALA/scala1$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SCALA/out/production/SCALA/scala1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SCALA/src/Test1.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SCALA/src/scala1.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SCALA1/SCALA1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SCALA1/src/MoshiP.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SCALA1/src/apply.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sevlet.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../feibo/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../feibo/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../feibo/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../feibo/feibo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../feibo/feibo1/feibo1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../feibo/out/production/feibo/Feibo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../feibo/src/Feibo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../feibonaqi/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../feibonaqi/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../feibonaqi/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../feibonaqi/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../feibonaqi/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../feibonaqi/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../feibonaqi/feibonaqi.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../feibonaqi/src/com/company/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jiecheng/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jiecheng/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jiecheng/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jiecheng/jiecheng.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jiecheng/src/Jiecheng.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jiecheng/src/Jiecheng1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jiecheng/src/Printstar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice/out/production/practice/Client$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice/out/production/practice/Client.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice/out/production/practice/RecieveTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice/out/production/practice/Server$ListenrClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice/out/production/practice/Server.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice/out/production/practice/chatServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice/out/production/practice/chatclient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice/practice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice/src/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice/src/RecieveTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice/src/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice/src/chatServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice/src/chatclient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/.idea/libraries/activation_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/.idea/libraries/asm_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/.idea/libraries/hadoop_common_2_7_7_tests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/.idea/libraries/hadoop_hdfs_2_7_7_tests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/.idea/libraries/jdiff.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/out/production/src/CharsetTest1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/out/production/src/CharsetTransform.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/out/production/src/NIOfunction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/src.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/src/.idea/FileChannelTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/src/.idea/libraries/activation_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/src/.idea/libraries/asm_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/src/.idea/libraries/hadoop_common_2_7_7_tests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/src/.idea/libraries/hadoop_hdfs_2_7_7_tests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/src/.idea/libraries/jdiff.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/src/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/src/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/src/.idea/src.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/src/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/src/HTTP/GetPostTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/src/IO/CharsetTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/src/IO/CharsetTest1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/src/IO/CharsetTransform.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/src/IO/FileChannelTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/src/IO/FileStreamTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/src/IO/FileTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/src/IO/NIOfunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/src/IO/WriterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/src/thread/Thread02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/src/thread/Threadfirstday.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/src/thread/Web12306.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tmp4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled2/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled2/out/production/untitled2/Feibo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled2/out/production/untitled2/Jiecheng.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled2/out/production/untitled2/META-INF/untitled2.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled2/out/production/untitled2/Mythread.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled2/out/production/untitled2/Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled2/out/production/untitled2/text.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled2/src/Feibo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled2/src/Jiecheng.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled2/src/Mythread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled2/src/T.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled2/src/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled2/src/text.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled2/untitled2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jedis_2_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Insert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/zuoye/ChatProtocol.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/zuoye/ClientMap.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/zuoye/ClientThread.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/zuoye/Clinet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/zuoye/Gathertest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/zuoye/InetAddressTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/zuoye/Inserrt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/zuoye/Inssert1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/zuoye/MyHttpServer$MyHttpHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/zuoye/MyHttpServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/zuoye/MyhttpServerTest$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/zuoye/MyhttpServerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/zuoye/PersonHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/zuoye/ScatterTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/zuoye/SerializeUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/zuoye/Server111.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/zuoye/ServerThread.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/zuoye/Test1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/zuoye/TestStaticClass.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/zuoye/TestStaticClass1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/zuoye/URLTest1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/zuoye/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/zuoye/ceshi.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/zuoye/http.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/zuoye/staticclass.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ChatProtocol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ClientMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Clinet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gathertest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/InetAddressTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Inserrt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Inssert1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MyHttpServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MyhttpServerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PersonHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ScatterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SerializeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server111.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ServerThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/URLTest1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ceshi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/http.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redis1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sssssssss/TestRedis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/staticclass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuoye.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../借鉴/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../借鉴/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../借鉴/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../借鉴/out/production/借鉴/Client.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../借鉴/out/production/借鉴/MyChannel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../借鉴/out/production/借鉴/Receive.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../借鉴/out/production/借鉴/Send.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../借鉴/out/production/借鉴/Server.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../借鉴/src/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../借鉴/src/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../借鉴/src/Test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../借鉴/借鉴.iml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="zuoye" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/InsertContent.java" />
+        <option value="$PROJECT_DIR$/Insert.java" />
+        <option value="$PROJECT_DIR$/src/Inserrt.java" />
+        <option value="$PROJECT_DIR$/src/PersonHandler.java" />
+        <option value="$PROJECT_DIR$/src/Test1.java" />
+        <option value="$PROJECT_DIR$/src/Gathertest.java" />
+        <option value="$PROJECT_DIR$/src/Zuoye721.java" />
+        <option value="$PROJECT_DIR$/src/Inssert1.java" />
+        <option value="$PROJECT_DIR$/src/User.java" />
+        <option value="$PROJECT_DIR$/src/InetAddressTest.java" />
+        <option value="$PROJECT_DIR$/src/http.java" />
+        <option value="$PROJECT_DIR$/src/ceshi.java" />
+        <option value="$PROJECT_DIR$/src/URLEncodeTest.java" />
+        <option value="$PROJECT_DIR$/src/URLTest1.java" />
+        <option value="$PROJECT_DIR$/src/MyhttpServerTest.java" />
+        <option value="$PROJECT_DIR$/src/MyHttpServer.java" />
+        <option value="$PROJECT_DIR$/src/staticclass.java" />
+        <option value="$PROJECT_DIR$/src/ClientMap.java" />
+        <option value="$PROJECT_DIR$/src/Client.java" />
+        <option value="$PROJECT_DIR$/src/ChatProtocol.java" />
+        <option value="$PROJECT_DIR$/src/Server111.java" />
+        <option value="$PROJECT_DIR$/src/Clinet.java" />
+        <option value="$PROJECT_DIR$/src/ServerThread.java" />
+        <option value="$PROJECT_DIR$/src/SerializeUtil.java" />
+        <option value="$PROJECT_DIR$/src/ScatterTest.java" />
+        <option value="$PROJECT_DIR$/src/sssssssss/TestPool.java" />
+        <option value="$PROJECT_DIR$/src/sssssssss/TestRedis.java" />
+        <option value="$PROJECT_DIR$/src/redis1.java" />
+        <option value="$PROJECT_DIR$/src/Paixu.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="1920" />
+    <option name="height" value="1013" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="zuoye" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zuoye" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zuoye" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zuoye" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zuoye" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zuoye" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zuoye" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zuoye" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zuoye" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zuoye" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sssssssss" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zuoye" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="zuoye" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/IdeaProjects/zuoye" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../src" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="sssssssss" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Paixu">
+    <configuration name="Inssert1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Inssert1" />
+      <module name="zuoye" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Paixu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Paixu" />
+      <module name="zuoye" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SerializeUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SerializeUtil" />
+      <module name="zuoye" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRedis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sssssssss.TestRedis" />
+      <module name="zuoye" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sssssssss.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="redis1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="redis1" />
+      <module name="zuoye" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.SerializeUtil" />
+      <item itemvalue="Application.Inssert1" />
+      <item itemvalue="Application.redis1" />
+      <item itemvalue="Application.TestRedis" />
+      <item itemvalue="Application.Paixu" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Paixu" />
+        <item itemvalue="Application.TestRedis" />
+        <item itemvalue="Application.redis1" />
+        <item itemvalue="Application.SerializeUtil" />
+        <item itemvalue="Application.Inssert1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7c5112fb-f0a3-495d-99db-1f07c1506f8e" name="Default Changelist" comment="" />
+      <created>1563331999187</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563331999187</updated>
+      <workItem from="1563332004429" duration="1250000" />
+      <workItem from="1563334413966" duration="1182000" />
+      <workItem from="1563339723685" duration="1519000" />
+      <workItem from="1563352036020" duration="391000" />
+      <workItem from="1563434465911" duration="493000" />
+      <workItem from="1563548763838" duration="1338000" />
+      <workItem from="1563550122787" duration="1113000" />
+      <workItem from="1563551713969" duration="579000" />
+      <workItem from="1563592044073" duration="226000" />
+      <workItem from="1563593171046" duration="192000" />
+      <workItem from="1563593384679" duration="876000" />
+      <workItem from="1563594540514" duration="14811000" />
+      <workItem from="1563616570503" duration="3111000" />
+      <workItem from="1563629258014" duration="2476000" />
+      <workItem from="1563632227195" duration="1854000" />
+      <workItem from="1563635939299" duration="5720000" />
+      <workItem from="1563667947359" duration="11771000" />
+      <workItem from="1563767530279" duration="2845000" />
+      <workItem from="1563784243455" duration="15012000" />
+      <workItem from="1563976488365" duration="10377000" />
+      <workItem from="1564042676995" duration="2617000" />
+      <workItem from="1564214851442" duration="598000" />
+      <workItem from="1564816201649" duration="598000" />
+      <workItem from="1564818216463" duration="866000" />
+      <workItem from="1564819920758" duration="1414000" />
+      <workItem from="1564838503291" duration="1581000" />
+      <workItem from="1565246371817" duration="843000" />
+      <workItem from="1565360546810" duration="2157000" />
+      <workItem from="1565367945947" duration="558000" />
+      <workItem from="1565419721969" duration="1107000" />
+      <workItem from="1571468489238" duration="999000" />
+      <workItem from="1571481343305" duration="6104000" />
+      <workItem from="1571646220321" duration="1244000" />
+      <workItem from="1571658189887" duration="631000" />
+      <workItem from="1571735811636" duration="863000" />
+      <workItem from="1571814666248" duration="672000" />
+      <workItem from="1573989881245" duration="68000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="99830000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="-1" width="1920" height="1015" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49719417" visible="true" weight="0.14812835" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.5028058" side_tool="true" weight="0.26307365" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1305842" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32996634" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.28476822" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Database" order="6" weight="0.32905984" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.24893162" />
+      <window_info anchor="right" id="Maven" order="8" weight="0.32959402" />
+      <window_info anchor="right" id="SciView" order="9" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49719417" visible="true" weight="0.120726496" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.5028058" side_tool="true" weight="0.26307365" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.034285713" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32996634" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.25714287" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Database" order="6" weight="0.32905984" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.24893162" />
+      <window_info anchor="right" id="Maven" order="8" weight="0.32959402" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/InsertContent.java" />
+    <entry file="file://$USER_HOME$/Desktop/easyarch/src/iotest/iotest.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/easyarch/src/iotest/src/org/nio/inout/scatterandgather/GatherTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="27" column="26" lean-forward="true" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/easyarch/src/iotest/src/TestSo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/io/File.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="602" column="34" selection-start-line="602" selection-end-line="603" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/lang/StringCoding.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="150" column="29" selection-start-line="150" selection-start-column="29" selection-end-line="150" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/nio/charset/Charset.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+          <caret line="44" column="22" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/nio/ByteBuffer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/nio/Buffer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Zuoye721.java" />
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/io/RandomAccessFile.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="23" column="10" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/io/ObjectOutputStream.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="442" lean-forward="true" selection-start-line="442" selection-end-line="442" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/lang/AbstractStringBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-747">
+          <caret line="160" column="60" lean-forward="true" selection-start-line="160" selection-start-column="60" selection-end-line="160" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/io/OutputStream.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/lang/System.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="40" column="40" lean-forward="true" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/lang/StringBuffer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="158" column="34" lean-forward="true" selection-start-line="158" selection-start-column="34" selection-end-line="158" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/io/LineNumberReader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1854">
+          <caret line="112" column="9" lean-forward="true" selection-start-line="112" selection-start-column="9" selection-end-line="112" selection-end-column="9" />
+          <folding>
+            <element signature="e#442#443#0" expanded="true" />
+            <element signature="e#469#470#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/URLEncodeTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/URlTest.java" />
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/com/sun/net/httpserver/spi/HttpServerProvider.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/lang/String.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/net/URL.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="40" column="42" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Insert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#292#293#0" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/URLTest1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ceshi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ChatProtocol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/staticclass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ClientMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ServerThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="31" column="64" selection-start-line="31" selection-start-column="64" selection-end-line="31" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#314#315#0" expanded="true" />
+            <element signature="e#348#349#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Server111.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyhttpServerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PersonHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="83" column="13" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Clinet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyHttpServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gathertest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InetAddressTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Inserrt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="55" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Inssert1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="10" column="74" selection-start-line="10" selection-start-column="74" selection-end-line="10" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/http.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ScatterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="101" selection-start-line="93" selection-start-column="9" selection-end-line="101" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sssssssss/TestPool.java" />
+    <entry file="file://$USER_HOME$/CLionProjects/One/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SerializeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sssssssss/TestRedis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="197" column="3" selection-start-column="2" selection-end-line="197" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#5393#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuoye.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redis1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="3" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#260#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Paixu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>zuoye</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>jedis-2.1.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
