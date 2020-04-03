@@ -13,16 +13,15 @@
 <body>
 <%request.setCharacterEncoding("UTF-8");%>
 <jsp:useBean id="dbBean" scope="session" class="bean.JDBCConnection"/>
-<% String name=request.getParameter("outAccount");
-    String sex=request.getParameter("Password");
-    String birthday=request.getParameter("inAccount");
-    String address=request.getParameter("inName");
-    String  money=request.getParameter("money");
-    int money1=Integer.parseInt(money);
-           if(dbBean.turn(name,sex,birthday,address,money1)){
-               response.sendRedirect("success.jsp");
-           }
-           else        response.sendRedirect("failure.jsp");
+<% String name = request.getParameter("outAccount");
+    String sex = request.getParameter("Password");
+    String birthday = request.getParameter("inAccount");
+    String address = request.getParameter("inName");
+    String money = request.getParameter("money");
+    int money1 = Integer.parseInt(money);
+    if (dbBean.turn(name, sex, birthday, address, money1)) {
+        response.sendRedirect("success.jsp");
+    } else response.sendRedirect("failure.jsp");
     dbBean.closeConnection();
 
 %>

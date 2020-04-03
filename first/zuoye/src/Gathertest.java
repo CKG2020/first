@@ -4,8 +4,9 @@ import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 import java.nio.charset.Charset;
+
 public class Gathertest {
-//    private static Charset charset = Charset.forName("UTF-8");
+    //    private static Charset charset = Charset.forName("UTF-8");
 //    private static ByteBuffer headBuffer;
 //    private static ByteBuffer bodyBuffer;
 //    private static ObjectOutputStream channel;
@@ -74,6 +75,7 @@ public class Gathertest {
         accessFile.close();
         channel.close();
     }
+
     public static void main(String[] args) throws IOException {
         final String fileName = "/home/ckg/Documents/text1.txt";
         /**----------Gather------------*/

@@ -1,5 +1,5 @@
-public class staticclass{
-    public static void main(String[] args){
+public class staticclass {
+    public static void main(String[] args) {
         //第一次调用StaticClass2中的值a
         System.out.println("StaticClass2中a的值为： " + TestStaticClass.b);
 
@@ -12,22 +12,22 @@ public class staticclass{
     }
 }
 
-    class TestStaticClass{
+class TestStaticClass {
 
-        static int a = 3;
-         static int b;
+    static int a = 3;
+    static int b;
 
-        static{
-            System.out.println("inti data2");
-            b = a * 3;
-        }
+    static {
+        System.out.println("inti data2");
+        b = a * 3;
+    }
+}
+
+class TestStaticClass1 {
+
+    public void test() {
+        TestStaticClass.a = 6;
+
     }
 
-    class TestStaticClass1 {
-
-        public void test() {
-            TestStaticClass.a = 6;
-
-        }
-
-    }
+}

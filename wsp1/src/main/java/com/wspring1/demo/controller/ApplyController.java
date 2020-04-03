@@ -28,8 +28,7 @@ public class ApplyController {
         if (apply1 == null) {
             LOGGER.debug("不同意申请");
             return "f";
-        }
-        else {
+        } else {
             //添加到Organization表中
             Organization organization = new Organization();
             organization.setOne("0");

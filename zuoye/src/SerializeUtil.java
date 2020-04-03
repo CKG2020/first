@@ -10,15 +10,15 @@ public class SerializeUtil {
             RandomAccessFile aFile = new RandomAccessFile("/home/ckg/Documents/text2.txt", "rw");
             //   fout = new FileOutputStream("/home//Videos/1.txt",true);
             FileChannel fileChannel = aFile.getChannel();
-            ByteBuffer xxx  = ByteBuffer.allocate(10);
-            ByteBuffer xxxx  = ByteBuffer.allocate(64);
+            ByteBuffer xxx = ByteBuffer.allocate(10);
+            ByteBuffer xxxx = ByteBuffer.allocate(64);
             byte[] bytes = null;
             ByteArrayOutputStream bos = new ByteArrayOutputStream();
             try {
                 ObjectOutputStream oos = new ObjectOutputStream(bos);
                 oos.writeObject(object);
                 oos.flush();
-                bytes = bos.toByteArray ();
+                bytes = bos.toByteArray();
                 oos.close();
                 bos.close();
             } catch (IOException ex) {
@@ -27,16 +27,16 @@ public class SerializeUtil {
             System.out.println(bytes.length);
 //            out = new ObjectOutputStream(fout);
 //            out.writeObject(object);
-            xxx.put(bytes,0,10);
+            xxx.put(bytes, 0, 10);
             xxx.mark();
-            xxxx.put(bytes,10,58);
+            xxxx.put(bytes, 10, 58);
             System.out.println(xxx);
 //            ByteBuffer[] byteBuffers ={xxx,xxxx};
 //            fileChannel.write(byteBuffers);
 //            fileChannel.close();
             xxx.flip();
             xxxx.flip();
-            ByteBuffer[] bufferArray = { xxx, xxxx };
+            ByteBuffer[] bufferArray = {xxx, xxxx};
             fileChannel.write(bufferArray);
             //out = new ObjectOutputStream(fout);
             // out.writeObject(object);
@@ -76,7 +76,7 @@ public class SerializeUtil {
         try {
             SerializeUtil.saveObject(user);
         } catch (Exception e) {
-            System.out.println( e);
+            System.out.println(e);
         }
         // 读取
         User userObject;

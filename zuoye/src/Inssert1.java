@@ -32,6 +32,7 @@ public class Inssert1 {
         accessFile.close();
         channel.close();
     }
+
     private static void writeData(final String fileName, String data) throws IOException {
         RandomAccessFile accessFile = new RandomAccessFile(fileName, "rw");
         accessFile.writeBytes(data);
@@ -54,7 +55,9 @@ public class Inssert1 {
         System.out.println(new String(dst, 0, 55));
 
     }
+
     public static void main(String[] args) {
-        Inssert1 a = new  Inssert1 ();
+        Inssert1 a = new Inssert1();
         a.test1();
-}}
+    }
+}

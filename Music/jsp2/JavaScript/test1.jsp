@@ -22,7 +22,6 @@
 <%--<script>document.getElementById("demo2").innerHTML="第一段";</script>--%>
 
 
-
 <%--<script > function x() {--%>
 <%--    documentpe.getElementById("demo3").innerHTML = "是是是";--%>
 <%--}--%>
@@ -30,33 +29,30 @@
 <%--<p id="demo3">一个测试</p>--%>
 <%--<button type="button" onclick="x()">试试</button>--%>
 <script>
-document.write(5+6);
+    document.write(5 + 6);
 </script>
 
 <button onclick="document.write(5+8);">haha</button>
 
 
 <script>
-    window.alert(5+6); //可自行定义警告框的内容
+    window.alert(5 + 6); //可自行定义警告框的内容
 </script>
 
 <script>
-console.log(555)
+    console.log(555)
 </script>
 
 <script>
-    function myfunction(){
+    function myfunction() {
         // window.alert("lalala");
         // console.log("ok");
-        document.getElementById("xxx").innerHTML="nishishui";
+        document.getElementById("xxx").innerHTML = "nishishui";
 
     }
 </script>
 <p id="xxx"> 这是 默写的，厉害吧</p>
 <button type="button" onclick="myfunction()">按吧</button>
-
-
-
 
 
 </body>

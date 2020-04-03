@@ -1,7 +1,7 @@
 /**
  * 一、缓冲区（Buffer）:在java NIO中负责数据的存取。缓冲区就是数组。用于存储
  * 不同数据类型的数据
- *
+ * <p>
  * 根据数据类型的不同（boolean除外），提供对应类型的缓冲区：
  * ByteBuffer - 最常用的
  * CharBuffer
@@ -10,22 +10,23 @@
  * LongBuffer
  * FloatBuffer
  * DoubleBuffer
- *
+ * <p>
  * 上述的缓冲区的管理方式几乎是一致的 ，通过allocate()获取缓冲区
- *
+ * <p>
  * 二、缓冲区里面的存取数据的两个核心方法：
  * put()：存入数据到缓冲区中
  * get()：获取缓冲区中的数据
- *
+ * <p>
  * 四 、缓冲区中的核心属性
  * capacity：容量，表示缓冲区中最大存储数据的容量，一旦声明了则不能改变。
  * limit：表示缓冲区中可0以操作数据的大小。（limit后数据是不可以进行读写的）
  * position：位置，表示缓冲区正在操作数据的位置。
  * mark：标记，表示记录当前position的位置，可以通过reset()恢复到mark的位置
- *
+ * <p>
  * 0 <= mark <= position <= limit <= capacity
+ */
 
- */import java.io.IOException;
+import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.nio.Buffer;
 import java.nio.ByteBuffer;
@@ -48,8 +49,8 @@ public class Test1 {
 
         //mark()：标记
         buf.mark();
-        buf.get(dst,3, 2);
-        System.out.println(new String(dst, 0, 3)+"---------");
+        buf.get(dst, 3, 2);
+        System.out.println(new String(dst, 0, 3) + "---------");
         System.out.println(buf.position());
 
         //reset()
@@ -107,7 +108,9 @@ public class Test1 {
         System.out.println("容量 " + buf.capacity());
 
     }
-public static void main(String[] args) {
-    Test1 a = new Test1();
-    a.test2();
-}}
+
+    public static void main(String[] args) {
+        Test1 a = new Test1();
+        a.test2();
+    }
+}

@@ -1,22 +1,24 @@
 package com.example;
+
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import java.util.Date;
 
-@Table(name="Student")
+@Table(name = "Student")
 @Entity
 public class Student {
-    private  String  Name;
-    private  String  StuNum;
-    private int  id;
+    private String Name;
+    private String StuNum;
+    private int id;
 
-    public   Student(){
+    public Student() {
 
     }
-    public Student(String Name ,String StuNum,int id) {
-        this.id=id;
-        this.Name=Name;
-        this.StuNum=StuNum;
+
+    public Student(String Name, String StuNum, int id) {
+        this.id = id;
+        this.Name = Name;
+        this.StuNum = StuNum;
 
 
     }

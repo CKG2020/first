@@ -6,13 +6,12 @@ import java.util.Objects;
 @Entity
 @Table(name = "address", schema = "db1")
 public class AddressEntity {
-    private  Integer ID;
+    private Integer ID;
     private String street;
     private String city;
     private String provice;
     private String zipcode;
     private CustomerEntity customer;
-
 
 
     @Id
@@ -21,9 +20,10 @@ public class AddressEntity {
         return ID;
     }
 
-    public void setID (Integer ID) {
-        this.ID =ID;
+    public void setID(Integer ID) {
+        this.ID = ID;
     }
+
     public CustomerEntity getCustomer() {
         return customer;
     }

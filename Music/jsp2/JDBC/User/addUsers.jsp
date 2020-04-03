@@ -15,18 +15,18 @@
 <%request.setCharacterEncoding("UTF-8");%>
 <jsp:useBean id="dbBean" scope="page" class="bean.JDBCConnection"/>
 <%
-    String name=request.getParameter("name");
-    String sex=request.getParameter("sex");
+    String name = request.getParameter("name");
+    String sex = request.getParameter("sex");
 //
 //    System.out.print(request.getParameter("name"));
 //    String sex=new String(request.getParameter("
 //    String birthday=new String(request.getParameter("birthday").getBytes("ISO8859-1"), StandardCharsets.UTF_8);
 //    String address=new String(request.getParameter("address").getBytes("ISO8859-1"), StandardCharsets.UTF_8);
 //    String tel=new String(request.getParameter("tel").getBytes("ISO8859-1"), StandardCharsets.UTF_8);
-    String  birthday=request.getParameter("birthday");
-    String address=request.getParameter("address");
-    String tel=request.getParameter("tel");
-    String sqladd="insert into PersonalInformation values('"+name+"','"+sex+"','"+birthday+"','"+address+"','"+tel+"')";
+    String birthday = request.getParameter("birthday");
+    String address = request.getParameter("address");
+    String tel = request.getParameter("tel");
+    String sqladd = "insert into PersonalInformation values('" + name + "','" + sex + "','" + birthday + "','" + address + "','" + tel + "')";
     dbBean.executeUpdate(sqladd);
     dbBean.closeConnection();
     response.sendRedirect("PersonalInfomation.jsp");

@@ -11,7 +11,9 @@
     <title>提示</title>
 </head>
 <body>
-<h2><center>提示转账</center></h2>
+<h2>
+    <center>提示转账</center>
+</h2>
 转账成功
 </body>
 </html>

@@ -12,11 +12,11 @@
 </head>
 <body>
 <center><h2>选购商品</h2></center>
-<form action ="buyitem" method ="post">
-<input type="checkbox" name ="item" value ="0">图书
-    <input type="checkbox" name ="item" value ="1">化妆品
-    <input type="checkbox" name ="item" value ="2">衣服
-    <input type="submit" name ="submit" value ="加入购物车">
+<form action="buyitem" method="post">
+    <input type="checkbox" name="item" value="0">图书
+    <input type="checkbox" name="item" value="1">化妆品
+    <input type="checkbox" name="item" value="2">衣服
+    <input type="submit" name="submit" value="加入购物车">
 </form>
 </body>
 </html>

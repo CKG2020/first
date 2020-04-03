@@ -1,40 +1,19 @@
 server:
-  port: 8081
+  port: 8989
+spring:
+  redis:
+    host: localhost
+    port: 6379
+    # 密码 没有则可以不填
+#    password: 123456
+    # 如果使用的jedis 则将lettuce改成jedis即可
+    lettuce:
+      pool:
+        # 最大活跃链接数 默认8
+        max-active: 8
+        # 最大空闲连接数 默认8
+        max-idle: 8
+        # 最小空闲连接数 默认0
+        min-idle: 0
 
 
-person:
-   name: lisi
-   age: 52
-   boss: false
-   birth: 1999/01/24
-   maps: {k1: shanshan ,k2: 42}
-   lists:
-     - wangwu
-     - lisi
-   dog:
-     name: huahua
-     age: 1
-
-
-#logging:
-#  level:
-#    com. atguigu: trace
-#  file: springboot.log
-
-#能修改springboot输出日志的级别,打破info级别的日志输出 cuowu
-
-#这两者有神魔区别 不知道
-
-#logging:
-#  level:
-#    com.devinkin: trace
-#    这个目前不清楚 ,以上两者在单元测试时的效果一样，且对于原有的日志输出级别没有改变？？？？
-
-logging:
-  path: /home/ckg/Desktop
-#打印出来了  开森开森
-
-#spring:
-#  profiles:
-#    active: dev
-#切换springboot的开发环境

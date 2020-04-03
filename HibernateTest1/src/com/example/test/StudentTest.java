@@ -47,7 +47,7 @@ public class StudentTest {
     @Test
     public void testSaveStudents() {
         //生成学生对象
-        Student s = new Student( "金庸", "0304180213", 3);
+        Student s = new Student("金庸", "0304180213", 3);
         session.save(s); //保存对象进入数据库
     }
 }

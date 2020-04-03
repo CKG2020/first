@@ -13,7 +13,7 @@
 <body>
 <h2>forward 动作实例</h2>
 sduusdisa
-<jsp:forward page="xxx.jsp" />
+<jsp:forward page="xxx.jsp"/>
 
 </body>
 </html>

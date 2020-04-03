@@ -28,7 +28,7 @@ public class Inserrt {
 
     public static void main(String[] args)
             throws IOException {
-        insert("Insert.java",5,"ckg");
+        insert("Insert.java", 5, "ckg");
         System.in.read();
     }
 }

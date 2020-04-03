@@ -12,6 +12,6 @@
 </head>
 <body>
 <h2>include 动作实例</h2>
-<jsp:include page="xxx.jsp" flush="true" />
+<jsp:include page="xxx.jsp" flush="true"/>
 </body>
 </html>

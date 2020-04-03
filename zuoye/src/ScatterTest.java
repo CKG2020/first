@@ -89,7 +89,7 @@ public class ScatterTest {
     }
 
     public static void main(String[] args) throws IOException {
-         //String fileName = 76;
+        //String fileName = 76;
         //先写入10个字节数据 以便测试 scatter模式
 //        writeData(fileName, "qwertyuiop");
 //
