@@ -2,22 +2,30 @@ import io.lettuce.core.RedisClient;
 import io.lettuce.core.api.StatefulRedisConnection;
 import io.lettuce.core.api.async.RedisAsyncCommands;
 import io.lettuce.core.api.sync.RedisStringCommands;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
 import java.util.concurrent.ExecutionException;
 
 public class SingelTest {
 
-@Test
-public void test() throws ExecutionException, InterruptedException {
+ private  RedisClient redisClient;
+   private  StatefulRedisConnection<String, String> connect;
 
-    RedisClient client = RedisClient.create("redis://localhost");
-    // connection, 线程安全的长连接，连接丢失时会自动重连，直到调用 close 关闭连接。
-    StatefulRedisConnection<String, String> connection = client.connect();
-    // sync, 默认超时时间为 60s.
-    RedisAsyncCommands<String, String> command = connection.async();
-        //获取列表长度
-//    command.
+    @Before
+    public void beforeTest () {
+        redisClient = RedisClient.create("redis://localhost");
+        System.out.println("init");
+    }
+
+    @Test
+    public void test() throws ExecutionException, InterruptedException {
+
+        connect = redisClient.connect();
+        RedisAsyncCommands command = (RedisAsyncCommands) connect.sync();
+
+
         Long b = (Long) command.llen("x2").get();
         System.out.println(b);
         //查找元素
@@ -38,4 +46,13 @@ public void test() throws ExecutionException, InterruptedException {
         String f = (String) command.lindex("x2", 0l).get();
         System.out.println(f);
     }
+
+
+    @After
+    public void afterTest() {
+        connect.close();
+        redisClient.shutdown();
+        System.out.println("finish");
+    }
+
 }

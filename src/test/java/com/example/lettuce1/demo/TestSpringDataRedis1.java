@@ -8,7 +8,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TestList {
+public class TestSpringDataRedis1 {
     private RedisTemplate<Object, Object> template;
 
     @Test
@@ -37,6 +37,7 @@ public class TestList {
         for (int i = 0; i < list.size(); i++) {
             strings[i]=list.get(i).toString();
         }
+
         System.out.println(JsonUtil.toJson(strings));
         ListOperations<Object, Object> operations =  this.template.opsForList();
         operations.leftPushAll("users",strings);

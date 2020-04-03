@@ -10,7 +10,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class Test1{
+public class TestRedisTemplate {
   //  这个是spring自带的redis操作
     @Autowired
     private RedisTemplate redisTemplate;
