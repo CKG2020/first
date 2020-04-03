@@ -41,7 +41,7 @@ public class TestPool {
 //                jp.returnResource(jedis);n
 //        }
 //        dispool();
-    }
+}
 
 
 

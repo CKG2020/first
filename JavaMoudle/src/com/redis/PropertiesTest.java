@@ -66,7 +66,7 @@ public class PropertiesTest {
     /**
      * 获得资源文件中指定key的的value值
      */
-    public void  getValue(String key) {
+    public void getValue(String key) {
         System.out.println(this.params.get(key));
     }
 
@@ -74,10 +74,10 @@ public class PropertiesTest {
     public static void main(String[] args) {
 
 //        System.out.println( PropertiesTest.instance().getValue("TEST_KEY"));
-        PropertiesTest test=PropertiesTest.instance();
+        PropertiesTest test = PropertiesTest.instance();
         test.getValue("SERVER_ADDRESS");
         test.getValue("SERVER_PORT");
-}
+    }
 
 
 //    Properties properties = new Properties();

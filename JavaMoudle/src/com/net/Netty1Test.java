@@ -31,8 +31,8 @@ public final class Netty1Test {
             ServerBootstrap b = new ServerBootstrap();
             // 配置服务端处理的reactor线程组以及服务端的其他配置
 
-                    // 设置两个线程组（Reactor线程模型中的mainReactorThreads与subReactorThreads）。说白了就是两个线程池
-                    b.group(bossGroup, workerGroup2)
+            // 设置两个线程组（Reactor线程模型中的mainReactorThreads与subReactorThreads）。说白了就是两个线程池
+            b.group(bossGroup, workerGroup2)
                     // 设置采用的channel类型（NioServerSocketChannel对应ServerSocketChannel，其它类似），底层实现用的反射
                     /**
                      * ChannelFactory 的 newChannel() 方法什么时候会被调用就可以了。

@@ -6,7 +6,7 @@ public class proxyHello implements IHello {
 
     private IHello iHello;
 
-    public void setImpl(IHello impl){
+    public void setImpl(IHello impl) {
 
         this.iHello = impl;
 
@@ -29,7 +29,7 @@ public class proxyHello implements IHello {
 
         Hello hello = new Hello();
 
-       proxyHello  proxy = new proxyHello();
+        proxyHello proxy = new proxyHello();
 
         proxy.setImpl(hello);
 

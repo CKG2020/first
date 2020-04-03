@@ -1,4 +1,5 @@
 package com.proxy;
+
 interface IHello {
 
     void sayHello(String name);
@@ -7,18 +8,20 @@ interface IHello {
 
 
 }
-public class Hello implements IHello{
+
+public class Hello implements IHello {
     @Override
     public void sayHello(String name) {
-        System.out.println("Hello::"+name);
+        System.out.println("Hello::" + name);
 
     }
 
     @Override
     public void sayGoodBye(String name) {
-        System.out.println("goodbye::"+name);
+        System.out.println("goodbye::" + name);
     }
-//    static public <StaticProxy> void main(String[] arg) {
+
+    //    static public <StaticProxy> void main(String[] arg) {
 //
 //        Hello hello = new Hello();
 //
@@ -29,9 +32,9 @@ public class Hello implements IHello{
 //        proxy.sayHello("Jerry");
 //
 //    }
-   public static void main(String[] args) {
-    Hello hello=new Hello();
-    hello.sayGoodBye("张三");
-    hello.sayHello("李四");
-}
+    public static void main(String[] args) {
+        Hello hello = new Hello();
+        hello.sayGoodBye("张三");
+        hello.sayHello("李四");
+    }
 }

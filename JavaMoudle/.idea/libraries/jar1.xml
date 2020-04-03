@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="jar1">
+    <CLASSES>
+      <root url="file://$USER_HOME$/Desktop/可用安装包/netty-5.0.0.Alpha2/jar" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$USER_HOME$/Desktop/可用安装包/netty-5.0.0.Alpha2/jar" />
+    </SOURCES>
+    <jarDirectory url="file://$USER_HOME$/Desktop/可用安装包/netty-5.0.0.Alpha2/jar" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/Desktop/可用安装包/netty-5.0.0.Alpha2/jar" recursive="false" type="SOURCES" />
+  </library>
+</component>

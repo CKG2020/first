@@ -1,9 +1,11 @@
 package com.proxy;
 
 //InvocationHandler是一个JDK提供的标准接口。看下面的代码：
+
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
+
 class DynaProxyHello implements InvocationHandler {
     private Object delegate;
 
@@ -27,11 +29,12 @@ class DynaProxyHello implements InvocationHandler {
         return result;
 
     }
-        static public void  main (String[]args){
-            DynaProxyHello helloproxy = new DynaProxyHello();
-            Hello hello = new Hello();
-            IHello ihello = (IHello) helloproxy.bind(hello);
-            ihello.sayHello("Jerry");
-        }
+
+    static public void main(String[] args) {
+        DynaProxyHello helloproxy = new DynaProxyHello();
+        Hello hello = new Hello();
+        IHello ihello = (IHello) helloproxy.bind(hello);
+        ihello.sayHello("Jerry");
+    }
 
 }

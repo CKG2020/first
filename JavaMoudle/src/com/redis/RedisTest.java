@@ -37,7 +37,7 @@ public class RedisTest {
         Jedis jedis = new Jedis("localhost");
         System.out.println("Connection to server sucessfully");
 
-        Set<String> set =  jedis.keys("*");
+        Set<String> set = jedis.keys("*");
 
         Iterator<String> stringIterator = set.iterator();
 
@@ -48,8 +48,5 @@ public class RedisTest {
     }
 
 
-
-
-
-    }
+}
 

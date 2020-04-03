@@ -3,7 +3,7 @@ package com.redis;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPubSub;
 
-public class Sub  extends JedisPubSub {
+public class Sub extends JedisPubSub {
 
     //取得订阅的消息后的处理
     public void onMessage(String channel, String message) {
@@ -43,10 +43,10 @@ public class Sub  extends JedisPubSub {
         Jedis jedis = new Jedis("localhost", 6379);
         jedis.connect();
         Sub client1 = new Sub();
-        jedis.subscribe(client1,"news");
+        jedis.subscribe(client1, "news");
         System.out.println("----------------");
-        String message=null;
-        client1.onMessage("news","message");
+        String message = null;
+        client1.onMessage("news", "message");
 
         jedis.disconnect();
     }
