@@ -19,11 +19,12 @@ class DynaProxyHello implements InvocationHandler {
     public Object invoke(Object proxy, Method method, Object[] args)
             throws Throwable {
         Object result = null;
-        try {
+        try{
             System.out.println("问候之前的日志记录...");
             // JVM通过这条语句执行原来的方法(反射机制)
             result = method.invoke(this.delegate, args);
-        } catch (Exception e) {
+        }
+        catch (Exception e) {
             e.printStackTrace();
         }
         return result;

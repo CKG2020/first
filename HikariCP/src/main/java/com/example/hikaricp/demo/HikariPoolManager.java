@@ -16,7 +16,7 @@ public class HikariPoolManager {
 
     private static Logger logger = LoggerFactory.getLogger(HikariPoolManager.class);
 
-    private static final String DB_CONFIG_FILE = "application.properties";
+    private static final String DB_CONFIG_FILE = "dbconfig.properties";
 
     // 数据库服务器addr
     private static String db_url = null;

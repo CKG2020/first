@@ -8,6 +8,26 @@
         <version>2.2.6.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
+
+<!--    <bean id="hikariDataSource">-->
+<!--              class="com.zaxxer.hikari.HikariDataSource" destroy-method="shutdown">-->
+<!--            <constructor-arg>-->
+<!--                <bean class="com.zaxxer.hikari.HikariConfig">-->
+<!--                    <property name="driverClassName" value="${hikaricp.jdbc.driverClassName}"/>-->
+<!--                    <property name="jdbcUrl" value="${hikaricp.url}"/>-->
+<!--                    <property name="username" value="${hikaricp.username}"/>-->
+<!--                    <property name="password" value="${hikaricp.password}"/>-->
+<!--                    <property name="connectionTestQuery" value="${hikaricp.connectionTestQuery}"/>-->
+<!--                    <property name="connectionTimeout" value="${hikaricp.connectionTimeout}"/>-->
+<!--                    <property name="idleTimeout" value="${hikaricp.idleTimeout}"/>-->
+<!--                    <property name="maxLifetime" value="${hikaricp.maxLifetime}"/>-->
+<!--                    <property name="maximumPoolSize" value="${hikaricp.maximumPoolSize}"/>-->
+<!--                    <property name="minimumIdle" value="${hikaricp.minimumIdle}"/>-->
+<!--                </bean>-->
+<!--            </constructor-arg>-->
+<!--        </bean>-->
+
     <groupId>com.example.Hikaricp</groupId>
     <artifactId>demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -23,7 +43,10 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -39,7 +62,8 @@
         <dependency>
             <groupId>com.zaxxer</groupId>
             <artifactId>HikariCP</artifactId>
-            <version>2.7.2</version>
+            <version>3.4.2</version>
+<!--            <scope>compile</scope>-->
         </dependency>
     </dependencies>
 
