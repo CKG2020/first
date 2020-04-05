@@ -54,6 +54,18 @@ public class Test {
             e.printStackTrace();
         }
 
+
+
+//        System.out.println(CommonComponent.class.getResource("").getPath());
+//        System.out.println(CommonComponent.class.getResource("/").getPath());
+//        System.out.println(CommonComponent.class.getClassLoader().getResource("").getPath());
+//        第一个语句得到的是Demo类所在的绝对路径，第二、第三个语句得到的是项目CLASSPATH的绝对路径
+//        题主你写的那两个读取资源的语句就是定位到以下路径 项目CLASSPATH/project/db.properties，看一下你的资源文件是不是在那个地方。
+
+
+//        /home/ckg/first/HikariCP/target/classes/com/example/hikaricp/demo/
+///home/ckg/first/HikariCP/target/classes/
+///home/ckg/first/HikariCP/target/classes/
     }
 
 }

@@ -17,8 +17,11 @@ public class DemoApplication extends SpringBootServletInitializer {
 
         SpringApplication app = new SpringApplication(DemoApplication.class);
         app.setWebApplicationType(WebApplicationType.NONE);
-
         HikariPoolManager.start();
+//        HikariPoolManager.getConnection();
+//        CommonComponent commonComponent=new CommonComponent();
+//        commonComponent.getJdbcData("select * from User");
+//        HikariPoolManager.stop();
         app.run(args);
 
 //            SpringApplication.run(DemoApplication.class, args);
