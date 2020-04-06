@@ -34,7 +34,10 @@ class DynaProxyHello implements InvocationHandler {
     static public void main(String[] args) {
         DynaProxyHello helloproxy = new DynaProxyHello();
         Hello hello = new Hello();
-        IHello ihello = (IHello) helloproxy.bind(hello);
+//        Hello ihello = (Hello) helloproxy.bind(hello); 不行
+//        java.lang.ClassCastException: com.proxy.$Proxy0 cannot be cast to com.proxy.Hello
+        //也就是说 生成的代理对象只能是接口类型的
+        IHello ihello=(IHello)helloproxy.bind(hello);
         ihello.sayHello("Jerry");
     }
 

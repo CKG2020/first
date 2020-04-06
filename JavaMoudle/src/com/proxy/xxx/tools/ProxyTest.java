@@ -1,4 +1,4 @@
-package com.proxy.easyarch.tools;
+package com.proxy.xxx.tools;
 
 import java.lang.reflect.*;
 
@@ -26,8 +26,6 @@ class MyInvokationHandler implements InvocationHandler {
         }
         return null;
     }
-
-
     public static void main(String[] args)
             throws Exception {
         // 创建一个InvocationHandler对象
@@ -35,8 +33,10 @@ class MyInvokationHandler implements InvocationHandler {
         // 使用指定的InvocationHandler来生成一个动态代理对象
         Person p = (Person) Proxy.newProxyInstance(Person.class.getClassLoader()
                 , new Class[]{Person.class}, handler);
+        //p并非为Person的实例而是一个代理类的对象
         // 调用动态代理对象的walk()和sayHello()方法
         p.walk();
         p.sayHello("xxx");
+        //调用的上面的两个方法其实是在调用 proxy的invoke()方法
     }
 }

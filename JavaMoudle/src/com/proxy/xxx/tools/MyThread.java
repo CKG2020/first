@@ -1,8 +1,6 @@
-package com.proxy.easyarch.tools;
+package com.proxy.xxx.tools;
 
-/**
- * Created by andilyliao on 16-12-11.
- */
+
 class YourThread implements IRunanble {
 
     @Override
