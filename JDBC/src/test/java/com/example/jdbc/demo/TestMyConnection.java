@@ -17,9 +17,9 @@ public class TestMyConnection {
             conn=mydataSource.getConnection();
             String sql="insert into User values(?,?,?)";
             pstmt=conn.prepareStatement(sql);
-            pstmt.setInt(1,2);
-            pstmt.setString(2,"xxx");
-            pstmt.setString(3,"123456");
+            pstmt.setInt(1,3);
+            pstmt.setString(2,"sss");
+            pstmt.setString(3,"1234567");
             int rows=pstmt.executeUpdate();
             if (rows>0){
                 System.out.println("添加成功");
