@@ -1,6 +1,6 @@
 package com.example.test;
 
-import com.example.Student;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -13,10 +13,10 @@ public class Test {
         SessionFactory sessionFactory = configuration.buildSessionFactory();
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        Student student = new Student();
-        student.setId(1);
-        student.setName("chen");
-        student.setStuNum("0304180216");
+        StudentEntity student = new StudentEntity();
+//        student.setId(4);
+        student.setName("xxx");
+        student.setStuNum("0304180218");
         session.save(student);
         transaction.commit();
         session.close();

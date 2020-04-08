@@ -6,9 +6,8 @@
     <session-factory>
         <property name="connection.url">jdbc:mysql://localhost:3306/db1</property>
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="connection.username">root</property>
-        <property name="connection.password">root</property>
-
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">root</property>
         <!-- DB schema will be updated if needed -->
         <property name="hibernate.hbm2ddl.auto">update</property>
 
@@ -23,7 +22,9 @@
 
 
         <!--3. 加载所有映射-->
-        <mapping resource="Student.hbm.xml"/>
+<!--        <mapping resource="Student.hbm.xml"/>-->
+<!--        <mapping class="com.example.test.StudentEntity"/>-->
+
         <mapping class="com.example.AddressEntity"/>
         <mapping class="com.example.CustomerEntity"/>
         <mapping resource="AddressEntity.hbm.xml"/>

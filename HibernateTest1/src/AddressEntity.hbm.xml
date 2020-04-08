@@ -26,12 +26,7 @@
         <property name="city" type="string">
             <column name="city" length="128"/>
         </property>
-        <property name="provice" type="string">
-            <column name="provice" length="128"/>
-        </property>
-        <property name="zipcode" type="string">
-            <column name="zipcode" length="6"/>
-        </property>
+
 
     </class>
 </hibernate-mapping>

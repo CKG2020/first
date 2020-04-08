@@ -63,8 +63,8 @@ public class CustomerAndAddressDAO {
         address.setID(1);
         address.setProvice("province1");
         address.setCity("city1");
-        address.setStreet("street1");
-        address.setZipcode("100085");
+//        address.setStreet("street1");
+//        address.setZipcode("100085");
         //设置Address对象和Customer对象关系
         address.setCustomer(customer);
         customer.setName("Peter");
@@ -79,8 +79,8 @@ public class CustomerAndAddressDAO {
         System.out.println("Customer Name:" + c.getName());
         System.out.println("Customer Address'id:" + c.getAddress().getID());
         System.out.println("Customer Address'street:" + c.getAddress().getStreet());
-        System.out.println("Customer Address'province:" + c.getAddress().getProvice());
-        System.out.println("Customer Address'city:" + c.getAddress().getCity());
+//        System.out.println("Customer Address'province:" + c.getAddress().getProvice());
+//        System.out.println("Customer Address'city:" + c.getAddress().getCity());
     }
 
 

@@ -1,21 +1,15 @@
 package com.example.test;
 
-import com.example.Student;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
-import org.hibernate.service.ServiceRegistry;
 //import org.hibernate.service.ServiceRegistryBuilder;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.Date;
 
-/**
- * Created by DreamBoy on 2016/5/15.
- */
 //测试类
 public class StudentTest {
     private SessionFactory sessionFactory;
@@ -47,7 +41,7 @@ public class StudentTest {
     @Test
     public void testSaveStudents() {
         //生成学生对象
-        Student s = new Student("金庸", "0304180213", 3);
+        StudentEntity s = new StudentEntity("大侠", "0304180213", 10);
         session.save(s); //保存对象进入数据库
     }
 }
