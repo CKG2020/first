@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.example.AddressEntity" table="address" schema="db1">
+        <!--        <id name="id" column="id"/>-->
+        <!--        <property name="street" column="street"/>-->
+        <!--        <property name="city" column="city"/>-->
+        <!--        <property name="provice" column="provice"/>-->
+        <!--        <property name="zipcode" column="zipcode"/>-->
+
+
+        <id name="id" type="integer">
+            <column name="id"/>
+            <generator class="native">
+                <param name="property">customer</param>
+            </generator>
+        </id>
+        <one-to-one name="customer" class="com.example.AddressEntity" constrained="true">
+        </one-to-one>
+<!--        　　　　constrained属性：就是表明我们的主键当外键使用了。 这个属性两个作用，一是通知这种对应关系在上面已经写过了，所以这里才不需要写column，-->
+<!--        二是表明这种关系是什么，也就是主键当外键。-->
+        <property name="street" type="string">
+            <column name="street" length="128"/>
+        </property>
+        <property name="city" type="string">
+            <column name="city" length="128"/>
+        </property>
+
+
+    </class>
+</hibernate-mapping>

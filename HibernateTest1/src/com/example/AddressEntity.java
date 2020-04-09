@@ -1,27 +1,29 @@
 package com.example;
 
+import com.sun.istack.NotNull;
+
 import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
 @Table(name = "address", schema = "db1")
 public class AddressEntity {
-    private Integer ID;
+    private Integer id;
     private String street;
     private String city;
-    private String provice;
-    private String zipcode;
+//    private String provice;
+//    private String zipcode;
     private CustomerEntity customer;
 
-
+@NotNull
     @Id
-    @Column(name = "ID")
-    public Integer getID() {
-        return ID;
+    @Column(name = "id")
+    public Integer getId() {
+        return id;
     }
 
-    public void setID(Integer ID) {
-        this.ID = ID;
+    public void setId(Integer ID) {
+        this.id = ID;
     }
 
     public CustomerEntity getCustomer() {
@@ -53,40 +55,39 @@ public class AddressEntity {
         this.city = city;
     }
 
-    @Basic
-    @Column(name = "provice")
-    public String getProvice() {
-        return provice;
-    }
-
-    public void setProvice(String provice) {
-        this.provice = provice;
-    }
-
-    @Basic
-    @Column(name = "zipcode")
-    public String getZipcode() {
-        return zipcode;
-    }
-
-    public void setZipcode(String zipcode) {
-        this.zipcode = zipcode;
-    }
+//    @Basic
+//    @Column(name = "provice")
+//    public String getProvice() {
+//        return provice;
+//    }
+//
+//    public void setProvice(String provice) {
+//        this.provice = provice;
+//    }
+//
+//    @Basic
+//    @Column(name = "zipcode")
+//    public String getZipcode() {
+//        return zipcode;
+//    }
+//
+//    public void setZipcode(String zipcode) {
+//        this.zipcode = zipcode;
+//    }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         AddressEntity that = (AddressEntity) o;
-        return ID == that.ID &&
+        return id== that.id &&
                 Objects.equals(street, that.street) &&
-                Objects.equals(city, that.city) &&
-                Objects.equals(provice, that.provice) &&
-                Objects.equals(zipcode, that.zipcode);
+                Objects.equals(city, that.city)
+             ;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(ID, street, city, provice, zipcode);
+        return Objects.hash(id, street, city);
     }
 }

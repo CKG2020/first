@@ -1,5 +1,7 @@
 package com.example;
 
+import com.sun.istack.NotNull;
+
 import javax.persistence.*;
 import java.util.Objects;
 
@@ -17,7 +19,7 @@ public class CustomerEntity {
     public void setAddress(AddressEntity address) {
         this.address = address;
     }
-
+    @NotNull
     @Id
     @Column(name = "id")
     public Integer getId() {
