@@ -32,9 +32,9 @@ public class Hello implements IHello {
 //        proxy.sayHello("Jerry");
 //
 //    }
-    public static void main(String[] args) {
-        Hello hello = new Hello();
-        hello.sayGoodBye("张三");
-        hello.sayHello("李四");
-    }
+//    public static void main(String[] args) {
+//        Hello hello = new Hello();
+//        hello.sayGoodBye("张三");
+//        hello.sayHello("李四");
+//    }
 }
