@@ -6,18 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Lettuce" />
-        <module name="Lettuce1" />
+        <module name="JavaMoudle" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="JavaMoudle" target="1.8" />
       <module name="Lettuce" target="8" />
       <module name="Lettuce1" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Lettuce1" options="-parameters" />
+      <module name="Lettuce1" options="" />
     </option>
   </component>
 </project>
