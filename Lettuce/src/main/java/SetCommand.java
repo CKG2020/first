@@ -33,11 +33,11 @@ public class SetCommand {
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         RedisAsyncCommands command2 = RedisConnectionUtilPool.getConnection().async();
-            command2.sadd("x3","xxx",0l,123);
+        command2.sadd("x3", "xxx", 0l, 123);
 
 //      Long a=  (Long) command2.scard("x3").get();
 //        System.out.println(a);
-        Set set= (Set) command2.smembers("x3").get();
+        Set set = (Set) command2.smembers("x3").get();
         //两种迭代方式
 //        Iterator it=set.iterator();
 //        while(it.hasNext()){
@@ -49,4 +49,5 @@ public class SetCommand {
         }
         System.out.println(set);
 
-}}
+    }
+}

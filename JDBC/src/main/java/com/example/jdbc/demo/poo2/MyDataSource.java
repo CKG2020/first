@@ -134,9 +134,9 @@ public class MyDataSource {
 
     private static LinkedList<Connection> connectionsPoll = new LinkedList<Connection>();
 
-    public MyDataSource(){
+    public MyDataSource() {
         try {
-            for(int i=0; i<=initCount; i++){//初始化生成5个数据库连接
+            for (int i = 0; i <= initCount; i++) {//初始化生成5个数据库连接
                 connectionsPoll.addLast(this.createConnection());
             }
         } catch (SQLException e) {
@@ -144,26 +144,25 @@ public class MyDataSource {
         }
     }
 
-    private Connection createConnection() throws SQLException{
+    private Connection createConnection() throws SQLException {
         return DriverManager.getConnection(url, user, password);
     }
 
-    public void free(Connection conn){
+    public void free(Connection conn) {
         connectionsPoll.addLast(conn);//将连接放回连接池
     }
 
-    public Connection getConnection() throws SQLException{
+    public Connection getConnection() throws SQLException {
         synchronized (connectionsPoll) {//多线程并发处理
-            if(connectionsPoll.size() > 0){
+            if (connectionsPoll.size() > 0) {
                 return connectionsPoll.removeFirst();
-            }
-            else if(currentCount < maxCount){
+            } else if (currentCount < maxCount) {
                 //未超过最大连接数，则新建连接
-                Connection  conn = createConnection();
+                Connection conn = createConnection();
                 connectionsPoll.add(conn);
                 currentCount++;
                 return conn;
-            }else{
+            } else {
                 throw new SQLException("连接已经用完");
             }
         }

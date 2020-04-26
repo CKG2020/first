@@ -3,6 +3,7 @@ package com.lock;
 public class SingletonDemo {
 
     private static SingletonDemo instance = null;
+
     private SingletonDemo() {
         System.out.println(Thread.currentThread().getName() + "\t" + "我是构造方法");
     }
@@ -21,16 +22,17 @@ public class SingletonDemo {
         }
         return instance;
     }
-        public static void main (String[]args){
+
+    public static void main(String[] args) {
 //        System.out.println(SingletonDemo.getInstance() == SingletonDemo.getInstance());
 //        System.out.println(SingletonDemo.getInstance() == SingletonDemo.getInstance());
 //        System.out.println(SingletonDemo.getInstance() == SingletonDemo.getInstance());
 
-            for (int i = 0; i <= 10; i++) {
-                new Thread(() -> {
-                    SingletonDemo.getInstance();
-                },
-                        String.valueOf(i)).start();
-            }
+        for (int i = 0; i <= 10; i++) {
+            new Thread(() -> {
+                SingletonDemo.getInstance();
+            },
+                    String.valueOf(i)).start();
         }
     }
+}

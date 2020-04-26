@@ -20,8 +20,8 @@
         </id>
         <one-to-one name="customer" class="com.example.AddressEntity" constrained="true">
         </one-to-one>
-<!--        　　　　constrained属性：就是表明我们的主键当外键使用了。 这个属性两个作用，一是通知这种对应关系在上面已经写过了，所以这里才不需要写column，-->
-<!--        二是表明这种关系是什么，也就是主键当外键。-->
+        <!--        　　　　constrained属性：就是表明我们的主键当外键使用了。 这个属性两个作用，一是通知这种对应关系在上面已经写过了，所以这里才不需要写column，-->
+        <!--        二是表明这种关系是什么，也就是主键当外键。-->
         <property name="street" type="string">
             <column name="street" length="128"/>
         </property>

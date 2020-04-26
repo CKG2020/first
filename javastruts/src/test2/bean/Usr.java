@@ -1,7 +1,7 @@
 package test2.bean;
 
 public class Usr {
-    private  int id;
+    private int id;
     private String username;
     private String password;
 

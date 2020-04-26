@@ -1,7 +1,6 @@
 package servlet;
 
 
-
 import org.apache.commons.codec.digest.DigestUtils;
 import service.UserServiceImpl;
 
@@ -32,7 +31,7 @@ public class LoginServlet extends HttpServlet {
         //如果存在，返回hello,如果不存在提示错误
 //        resp.setCharacterEncoding("UTF-8");
         try {
-            if (userService.findByName(username) == null&&password!=userService.findByName(username).getPassword()) {
+            if (userService.findByName(username) == null && password != userService.findByName(username).getPassword()) {
                 resp.getWriter().print("用户不存在或用户名、密码错误");
                 return;
             }

@@ -13,7 +13,8 @@ public class FCFSBean {
     private double start_time[];
     private double service_time[];
     private double complete_time[];
-    double[] b=arival_time;
+    double[] b = arival_time;
+
     public int getProcess_num() {
         return process_num;
     }
@@ -39,7 +40,7 @@ public class FCFSBean {
             BufferedReader buf = new BufferedReader(new InputStreamReader(System.in));
             String str1 = buf.readLine();
             double a = Double.parseDouble(str1);
-            this.b=arival_time;
+            this.b = arival_time;
             this.arival_time[i] = a;
         }
 
@@ -82,22 +83,19 @@ public class FCFSBean {
         for (int i = 0; i < procnum; i++) {
             for (int j = 0; j < procnum; j++) {
                 if (arival_time[i] == b[j]) {
-                    double lastTime=arival_time[j];
+                    double lastTime = arival_time[j];
                     if (i == 0) {
                         start_time[j] = arival_time[j];
                         complete_time[j] = start_time[j] + service_time[j];
-                        lastTime=complete_time[j];
-                    }
-                    else if (b[j] > lastTime) {
-                        start_time[j]=arival_time[j];
-                        complete_time[j]=start_time[j]+service_time[j];
-                        lastTime=complete_time[j];
-                    }
-
-                    else{
-                        start_time[j]=lastTime;
-                        complete_time[j]=start_time[j]+service_time[j];
-                        lastTime=complete_time[j];
+                        lastTime = complete_time[j];
+                    } else if (b[j] > lastTime) {
+                        start_time[j] = arival_time[j];
+                        complete_time[j] = start_time[j] + service_time[j];
+                        lastTime = complete_time[j];
+                    } else {
+                        start_time[j] = lastTime;
+                        complete_time[j] = start_time[j] + service_time[j];
+                        lastTime = complete_time[j];
                     }
                 }
             }
@@ -123,6 +121,7 @@ public class FCFSBean {
 
         }
     }
+
     public double[] getService_time() {
         System.out.println("输出各个进程服务时间:");
         for (double i : service_time) {

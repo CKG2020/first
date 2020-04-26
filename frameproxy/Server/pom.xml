@@ -23,7 +23,7 @@
         </plugins>
     </build>
     <!--    <artifactId>Client</artifactId>-->
-<!--    <artifactId>Framework</artifactId>-->
+    <!--    <artifactId>Framework</artifactId>-->
     <dependencies>
         <dependency>
             <groupId>org.example</groupId>

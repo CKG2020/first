@@ -6,25 +6,24 @@ import java.sql.SQLException;
 public class Threadone implements Runnable {
 
     private MyDataSource dataSource;
+
     public Threadone(MyDataSource dataSource) {
-        this.dataSource=dataSource;
+        this.dataSource = dataSource;
     }
 
     @Override
     public void run() {
-        for(int i=0;i<10;i++){
-            Connection connection= null;
+        for (int i = 0; i < 10; i++) {
+            Connection connection = null;
             try {
                 connection = dataSource.getConnection();
             } catch (SQLException e) {
                 e.printStackTrace();
             }
-            try{
+            try {
                 connection.close();
-            }
-            catch (Exception e)
-            {
-            e.printStackTrace();
+            } catch (Exception e) {
+                e.printStackTrace();
             }
         }
     }

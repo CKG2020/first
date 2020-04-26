@@ -21,7 +21,7 @@
         <property name="name" type="string">
             <column name="name" length="25" not-null="true"/>
         </property>
-        <one-to-one name="address" class="com.example.AddressEntity" cascade="all"  constrained="true">
+        <one-to-one name="address" class="com.example.AddressEntity" cascade="all" constrained="true">
         </one-to-one>
     </class>
 

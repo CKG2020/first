@@ -16,6 +16,7 @@ public class RedisConfig {
 
     /**
      * 配置自定义redisTemplate
+     *
      * @return
      */
     @Bean

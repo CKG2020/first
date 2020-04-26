@@ -31,26 +31,26 @@ public class ListCommand {
 //                通过索引获取列表中的元素
 //    Long  a= (long) command1.lpush("x2","name","id","sex").get();
 //        System.out.println(a);
-        command1.lpush("x2","name","id","sex");
+        command1.lpush("x2", "name", "id", "sex");
         //获取列表长度
-      Long b= (Long) command1.llen("x2").get();
+        Long b = (Long) command1.llen("x2").get();
         System.out.println(b);
         //查找元素
-      String c= (String) command1.lindex("x2",1l).get();
+        String c = (String) command1.lindex("x2", 1l).get();
         System.out.println(c);
         //修改指定索引的数据
-        command1.lset("x2",0l,"stuid");
-        String d=(String) command1.lindex("x2",0l).get();
+        command1.lset("x2", 0l, "stuid");
+        String d = (String) command1.lindex("x2", 0l).get();
         System.out.println(d);
         //添加元素
         //头插
-        command1.lpushx("x2","xxixi");
-        String e=(String)command1.lindex("x2",0l).get();
+        command1.lpushx("x2", "xxixi");
+        String e = (String) command1.lindex("x2", 0l).get();
         System.out.println(e);
 
         //删除元素
-        command1.lrem("x2",0l,"xxixi");
-        String f=(String)command1.lindex("x2",0l).get();
+        command1.lrem("x2", 0l, "xxixi");
+        String f = (String) command1.lindex("x2", 0l).get();
         System.out.println(f);
 //        System.out.println("【获取Hash数据】" + command1.lpop().get());
         RedisConnectionUtilPool.close();
@@ -58,9 +58,6 @@ public class ListCommand {
 //  command1.keys("x2");
 //  command1.lpushx("x2","hobby");
 //command1.lp
-
-
-
 
 
     }

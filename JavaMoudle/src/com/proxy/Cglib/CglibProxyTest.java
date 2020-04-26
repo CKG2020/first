@@ -8,6 +8,7 @@ public class CglibProxyTest {
         System.out.println(o.doSomething(5));
     }
 }
+
 class Do {
     public int doSomething(int num) {
         System.out.println("方法执行中。。。。。。");

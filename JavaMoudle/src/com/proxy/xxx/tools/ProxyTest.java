@@ -26,6 +26,7 @@ class MyInvokationHandler implements InvocationHandler {
         }
         return null;
     }
+
     public static void main(String[] args)
             throws Exception {
         // 创建一个InvocationHandler对象

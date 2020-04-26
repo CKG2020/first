@@ -17,7 +17,7 @@ public class CustomerAndAddressDAO {
     /**
      * 案例模拟保存客户操作  级联插入相关联的Address
      *
-     * @param  customer
+     * @param customer
      */
     public void save(Object customer) {
         Configuration config = new Configuration().configure("hibernate.cfg.xml");

@@ -27,13 +27,13 @@ public class Client {
             ChannelFuture sync = bootstrap.connect(host, port).sync();
 
             sync.channel().closeFuture().sync();
-        }
-        catch (InterruptedException e) {
+        } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {
             eventExecutors.shutdownGracefully();
         }
     }
+
     public static void main(String[] args) throws InterruptedException {
         Client client = new Client();
         client.init("127.0.0.1", 8888);

@@ -28,7 +28,7 @@ public class Test {
         Connection conn = null;
         Statement statement = null;
         ResultSet rs = null;
-        try{
+        try {
 
             //创建connection
             conn = ds.getConnection();
@@ -40,8 +40,8 @@ public class Test {
             //取数据
             System.out.println("Results:");
             int numcols = rs.getMetaData().getColumnCount();
-            while(rs.next()) {
-                for(int i=1;i<=numcols;i++) {
+            while (rs.next()) {
+                for (int i = 1; i <= numcols; i++) {
                     System.out.print("\t" + rs.getString(i));
                 }
                 System.out.println("");
@@ -49,11 +49,9 @@ public class Test {
 
             //关闭connection
             conn.close();
-        }
-        catch (SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
         }
-
 
 
 //        System.out.println(CommonComponent.class.getResource("").getPath());

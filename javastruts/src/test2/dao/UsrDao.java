@@ -9,23 +9,22 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class UsrDao {
-    private  Connection con;
-    private  PreparedStatement ps;
-    private  ResultSet rs;
-    public boolean  checkUsr(String uername, String password)
-    {
-        Usr u=null;
-        String sql="select * from User where uername=? and password=?";
-        try{
-            con= DBConn.getConnection();
-            ps=con.prepareStatement(sql);
+    private Connection con;
+    private PreparedStatement ps;
+    private ResultSet rs;
+
+    public boolean checkUsr(String uername, String password) {
+        Usr u = null;
+        String sql = "select * from User where uername=? and password=?";
+        try {
+            con = DBConn.getConnection();
+            ps = con.prepareStatement(sql);
             ps.setString(1, uername);
             ps.setString(2, password);
-            rs=ps.executeQuery();
+            rs = ps.executeQuery();
 //         它永远都不会返回null
 
-            if(rs.next())
-            {
+            if (rs.next()) {
 //                u=new Usr();
 ////                u.setId(rs.getInt("Id"));
 ////                u.setUsername(rs.getString("username"));
@@ -39,12 +38,11 @@ public class UsrDao {
                 return true;
             }
 
-        }
-        catch(SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
-        } finally{
+        } finally {
             DBConn.finalize(con, ps, rs);
         }
 

@@ -9,7 +9,7 @@ import java.lang.reflect.Proxy;
 import java.net.ServerSocket;
 import java.net.Socket;
 
- public class ProxyFramework {
+public class ProxyFramework {
 
 
     //暴露服务
@@ -57,7 +57,7 @@ import java.net.Socket;
         if (port <= 0 || port > 65535) {
             throw new IllegalArgumentException("Invalid port" + port);
         }
-        System.out.println("Get remote service" + "  "+interfaceClass.getName());
+        System.out.println("Get remote service" + "  " + interfaceClass.getName());
 
         return (T) Proxy.newProxyInstance(interfaceClass.getClassLoader(), new Class<?>[]{interfaceClass}, new InvocationHandler() {
             public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {

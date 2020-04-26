@@ -33,15 +33,15 @@ public class TestSpringDataRedis1 {
         list.add(user);
         list.add(user1);
         list.add(user2);
-        String[] strings =new String[list.size()];
+        String[] strings = new String[list.size()];
         for (int i = 0; i < list.size(); i++) {
-            strings[i]=list.get(i).toString();
+            strings[i] = list.get(i).toString();
         }
 
         System.out.println(JsonUtil.toJson(strings));
-        ListOperations<Object, Object> operations =  this.template.opsForList();
-        operations.leftPushAll("users",strings);
-        operations.leftPushAll("users1", JsonUtil.toJson(user),JsonUtil.toJson(user1),JsonUtil.toJson(user2));
+        ListOperations<Object, Object> operations = this.template.opsForList();
+        operations.leftPushAll("users", strings);
+        operations.leftPushAll("users1", JsonUtil.toJson(user), JsonUtil.toJson(user1), JsonUtil.toJson(user2));
         System.out.println(operations.size("users"));
     }
 }

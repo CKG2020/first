@@ -36,19 +36,19 @@ public class SortedSetCommand {
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         RedisAsyncCommands command3 = RedisConnectionUtilPool.getConnection().async();
-command3.zadd("x4",34,"name");
-command3.zadd("x4",2,"sex");
-command3.zadd("x4",23,"id");
-    ArrayList a=(ArrayList) command3.zrange("x4",0l,10l).get();
-    //结果按照从小到大排列[sex, id, name]
+        command3.zadd("x4", 34, "name");
+        command3.zadd("x4", 2, "sex");
+        command3.zadd("x4", 23, "id");
+        ArrayList a = (ArrayList) command3.zrange("x4", 0l, 10l).get();
+        //结果按照从小到大排列[sex, id, name]
         System.out.println(a);
-      command3.zrem("x4","name") ;
+        command3.zrem("x4", "name");
 
-        ArrayList b=(ArrayList) command3.zrange("x4",0l,10l).get();
+        ArrayList b = (ArrayList) command3.zrange("x4", 0l, 10l).get();
 
         System.out.println(b);
 
-   double c=(double)command3.zscore("x4","sex").get();
+        double c = (double) command3.zscore("x4", "sex").get();
         System.out.println(c);
 
 

@@ -21,7 +21,7 @@ import org.springframework.util.StringUtils;
 
 public class JsonUtil {
 
-    private static Logger _logger =  LoggerFactory.getLogger(JsonUtil.class);
+    private static Logger _logger = LoggerFactory.getLogger(JsonUtil.class);
 
     private static final ObjectMapper objectMapper = new ObjectMapper();
 
@@ -36,6 +36,7 @@ public class JsonUtil {
 
     /**
      * 将对象转换为JSON字符串
+     *
      * @param obj
      * @return
      */
@@ -50,7 +51,7 @@ public class JsonUtil {
 
     public static <T> T toObject(String json, Class<T> clazz) {
         try {
-            if(StringUtils.isEmpty(json)){
+            if (StringUtils.isEmpty(json)) {
                 return objectMapper.readValue(json, clazz);
             }
         } catch (JsonParseException e) {
@@ -65,6 +66,7 @@ public class JsonUtil {
 
     /**
      * 将Json字符串转换成List
+     *
      * @param clazz
      * @param json
      * @return
@@ -81,8 +83,9 @@ public class JsonUtil {
 
     /**
      * 获取泛型的Collection Type
+     *
      * @param collectionClass 泛型的Collection
-     * @param elementClasses 元素类
+     * @param elementClasses  元素类
      * @return JavaType Java类型
      * @since 1.0
      */
@@ -92,13 +95,14 @@ public class JsonUtil {
 
     /**
      * 将JSON字符串转为Map
+     *
      * @param json
      * @return
      */
     public static Map<String, Object> toMap(String json) {
         try {
             @SuppressWarnings("unchecked")
-            Map<String,Object> maps = objectMapper.readValue(json,Map.class);//转成map
+            Map<String, Object> maps = objectMapper.readValue(json, Map.class);//转成map
             return maps;
         } catch (Exception e) {
             return null;

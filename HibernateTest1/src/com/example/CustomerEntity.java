@@ -19,6 +19,7 @@ public class CustomerEntity {
     public void setAddress(AddressEntity address) {
         this.address = address;
     }
+
     @NotNull
     @Id
     @Column(name = "id")

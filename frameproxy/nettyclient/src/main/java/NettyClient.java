@@ -1,4 +1,5 @@
 //import com.sun.xml.internal.ws.util.StringUtils;
+
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.Channel;
 import io.netty.channel.EventLoopGroup;
@@ -10,7 +11,6 @@ import org.apache.commons.lang3.StringUtils;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
 
 
 public class NettyClient {
@@ -51,8 +51,7 @@ public class NettyClient {
                     channel.writeAndFlush(content);
                 }
             }
-        }
-        catch (InterruptedException e) {
+        } catch (InterruptedException e) {
             e.printStackTrace();
             System.exit(1);
         } finally {

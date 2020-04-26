@@ -81,8 +81,7 @@ public class ServerHandler extends SimpleChannelInboundHandler<String> {
         boolean active = channel.isActive();
         if (active) {
             System.out.println("[" + channel.remoteAddress() + "] is online");
-        }
-        else {
+        } else {
             System.out.println("[" + channel.remoteAddress() + "] is offline");
         }
         ctx.writeAndFlush("[server]: welcome");

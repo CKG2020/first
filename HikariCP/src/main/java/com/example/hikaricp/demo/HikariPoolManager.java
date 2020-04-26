@@ -95,12 +95,12 @@ public class HikariPoolManager {
         HikariDataSource dataSource = new HikariDataSource(hikariConfig1);
 
         logger.info("连接池初始化End!!!");
-        Connection connection=dataSource.getConnection();
-        Statement stmt=connection.createStatement();
-        ResultSet resultSet=stmt.executeQuery("select  * from User");
+        Connection connection = dataSource.getConnection();
+        Statement stmt = connection.createStatement();
+        ResultSet resultSet = stmt.executeQuery("select  * from User");
         int numcols = resultSet.getMetaData().getColumnCount();
-        while(resultSet.next()){
-            for(int i=1;i<=numcols;i++) {
+        while (resultSet.next()) {
+            for (int i = 1; i <= numcols; i++) {
                 System.out.print("\t" + resultSet.getString(i));
             }
 
@@ -133,7 +133,7 @@ public class HikariPoolManager {
      * @return
      * @throws SQLException
      */
-    public static  boolean stop() throws SQLException {
+    public static boolean stop() throws SQLException {
         dataSource.close();
         return true;
     }

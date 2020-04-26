@@ -1,4 +1,5 @@
 package service;
+
 import dao.UserDao;
 import entity.User;
 
@@ -15,15 +16,9 @@ public class UserServiceImpl {
     }
 
 
-
-
-    public User findByName( String username) throws SQLException {
+    public User findByName(String username) throws SQLException {
         return userDao.findByName(username);
     }
-
-
-
-
 
 
     public User findByNameAndPassword(String username, String password) throws SQLException {
@@ -31,11 +26,9 @@ public class UserServiceImpl {
     }
 
 
-
     public User login(String username, String password) throws SQLException {
         return findByNameAndPassword(username, password);
     }
-
 
 
     public boolean register(User user) throws SQLException {

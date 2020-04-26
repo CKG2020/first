@@ -7,10 +7,10 @@ import org.omg.PortableServer.THREAD_POLICY_ID;
 
 public class Pool2ThreadTest {
     public static void main(String[] args) {
-        MyDataSource dataSource= MyDataSourceFactory.createDataSource();
-        Threadone one=new Threadone(dataSource);
+        MyDataSource dataSource = MyDataSourceFactory.createDataSource();
+        Threadone one = new Threadone(dataSource);
 
-        Thread t1=new Thread(one);
+        Thread t1 = new Thread(one);
         t1.start();
     }
 

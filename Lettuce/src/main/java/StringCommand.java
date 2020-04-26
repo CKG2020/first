@@ -21,8 +21,8 @@ public class StringCommand {
 //    返回 key 所储存的字符串值的长度。
 
 
-
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         RedisAsyncCommands command4 = RedisConnectionUtilPool.getConnection().async();
 //        command4.set()
-}}
+    }
+}

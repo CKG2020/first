@@ -10,11 +10,11 @@ import java.util.concurrent.ExecutionException;
 
 public class SingelTest {
 
- private  RedisClient redisClient;
-   private  StatefulRedisConnection<String, String> connect;
+    private RedisClient redisClient;
+    private StatefulRedisConnection<String, String> connect;
 
     @Before
-    public void beforeTest () {
+    public void beforeTest() {
         redisClient = RedisClient.create("redis://localhost");
         System.out.println("init");
     }

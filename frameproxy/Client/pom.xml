@@ -10,8 +10,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>Client</artifactId>
-<!--    <artifactId>Framework</artifactId>-->
-<!--    <artifactId>api</artifactId>-->
+    <!--    <artifactId>Framework</artifactId>-->
+    <!--    <artifactId>api</artifactId>-->
     <dependencies>
         <dependency>
             <groupId>org.example</groupId>

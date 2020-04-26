@@ -11,11 +11,11 @@ public class AddressEntity {
     private Integer id;
     private String street;
     private String city;
-//    private String provice;
+    //    private String provice;
 //    private String zipcode;
     private CustomerEntity customer;
 
-@NotNull
+    @NotNull
     @Id
     @Column(name = "id")
     public Integer getId() {
@@ -80,10 +80,10 @@ public class AddressEntity {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         AddressEntity that = (AddressEntity) o;
-        return id== that.id &&
+        return id == that.id &&
                 Objects.equals(street, that.street) &&
                 Objects.equals(city, that.city)
-             ;
+                ;
     }
 
     @Override

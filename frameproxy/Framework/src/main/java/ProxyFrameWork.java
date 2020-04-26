@@ -138,13 +138,13 @@ public class ProxyFrameWork {
             ObjectInputStream objectInputStream = new ObjectInputStream(accept.getInputStream());
             String methodName = objectInputStream.readUTF();
 
-            System.out.println("xxxxxx"+methodName);
+            System.out.println("xxxxxx" + methodName);
 
             Class<?>[] paramTypes = (Class<?>[]) objectInputStream.readObject();
 
-            System.out.println("yyyyy"+paramTypes);
+            System.out.println("yyyyy" + paramTypes);
             Object[] args = (Object[]) objectInputStream.readObject();
-            System.out.println("zzzzz"+args);
+            System.out.println("zzzzz" + args);
 
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(accept.getOutputStream());
             try {
@@ -187,7 +187,6 @@ public class ProxyFrameWork {
             throw new IllegalArgumentException("Invalid port" + port);
         }
         System.out.println("Get remote service" + interfaceClass.getName());
-
 
 
         return (T) Proxy.newProxyInstance(interfaceClass.getClassLoader(), new Class<?>[]{interfaceClass}, new InvocationHandler() {

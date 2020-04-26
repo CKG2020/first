@@ -39,5 +39,5 @@ public class TestLettuce {
         redisClient.shutdown();
         System.out.println("finish");
     }
-    }
+}
 

@@ -1,9 +1,9 @@
 package entity;
 
 public class User {
-    private  int id;
-    private  String Username;
-    private  String Password;
+    private int id;
+    private String Username;
+    private String Password;
 
 //    public User(int id, String username, String password) {
 //        this.id = id;

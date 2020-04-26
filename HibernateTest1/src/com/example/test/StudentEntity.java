@@ -14,9 +14,9 @@ public class StudentEntity {
     }
 
     public StudentEntity(String x, String s, int i) {
-        this.id=i;
-        this.name=x;
-        this.stuNum=s;
+        this.id = i;
+        this.name = x;
+        this.stuNum = s;
     }
 
     @Basic

@@ -22,8 +22,8 @@
 
 
         <!--3. 加载所有映射-->
-<!--        <mapping resource="Student.hbm.xml"/>-->
-<!--        <mapping class="com.example.test.StudentEntity"/>-->
+        <!--        <mapping resource="Student.hbm.xml"/>-->
+        <!--        <mapping class="com.example.test.StudentEntity"/>-->
 
         <mapping class="com.example.AddressEntity"/>
         <mapping class="com.example.CustomerEntity"/>

@@ -19,7 +19,9 @@
         <tr align="center">
             <td>用户名：<input type="text" name="username"/></td>
         </tr>
-        <tr align="center"><td>密   码：<input type="password" name="password"/></td></tr>
+        <tr align="center">
+            <td>密 码：<input type="password" name="password"/></td>
+        </tr>
         <tr align="center">
             <td><input type="submit" value="提交"/><input type="reset" value="重置"/></td>
         </tr>

@@ -7,7 +7,7 @@ import java.util.Arrays;
  * request
  */
 public class RpcRequest implements Serializable {
-    private static final long serialVersionUID=420L;
+    private static final long serialVersionUID = 420L;
 
 
     private String requestId;

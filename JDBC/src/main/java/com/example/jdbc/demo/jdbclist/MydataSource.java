@@ -9,32 +9,34 @@ import java.util.LinkedList;
 import java.util.logging.Logger;
 
 public class MydataSource implements DataSource {
- private static LinkedList<Connection> pool=new LinkedList<Connection>();
+    private static LinkedList<Connection> pool = new LinkedList<Connection>();
 
- static {
-     for (int i = 0; i < 5; i++) {
-         Connection conn = JdbcUtil1.getConnection();
-         MyConnection myconn = new MyConnection(conn, pool);
-         pool.add(myconn);
-     }
- }
- //获取连接
+    static {
+        for (int i = 0; i < 5; i++) {
+            Connection conn = JdbcUtil1.getConnection();
+            MyConnection myconn = new MyConnection(conn, pool);
+            pool.add(myconn);
+        }
+    }
+
+    //获取连接
     @Override
     public Connection getConnection() throws SQLException {
-        Connection conn=null;
-        if(pool.size()==0){
-            for(int i=0;i<5;i++){
-                conn=JdbcUtil1.getConnection();
-                MyConnection myconn=new MyConnection(conn,pool);
+        Connection conn = null;
+        if (pool.size() == 0) {
+            for (int i = 0; i < 5; i++) {
+                conn = JdbcUtil1.getConnection();
+                MyConnection myconn = new MyConnection(conn, pool);
                 pool.add(myconn);
             }
         }
-        conn=pool.remove(0);
-      return conn;
+        conn = pool.remove(0);
+        return conn;
     }
-//归还连接
-    public void  returnConnection(Connection conn){
-     pool.add(conn);
+
+    //归还连接
+    public void returnConnection(Connection conn) {
+        pool.add(conn);
 
     }
 

@@ -10,14 +10,11 @@ public class ServerHandler extends SimpleChannelInboundHandler<String> {
     protected void messageReceived(ChannelHandlerContext ctx, String msg) throws Exception {
 
 
-
-
-
     }
 
     /**
-//     * 所有的活动用户
-//     */
+     //     * 所有的活动用户
+     //     */
 //    public static final ChannelGroup group = new DefaultChannelGroup(GlobalEventExecutor.INSTANCE);
 //
 //    /**

@@ -71,34 +71,34 @@ public class MyDataSourceFactory {
 //    }
 
 
-
-        private static String url = "jdbc:mysql://localhost:3306/db1";
-        private static String user = "root";
-        private static String password = "root";
-        private static MyDataSource datasource = null;
+    private static String url = "jdbc:mysql://localhost:3306/db1";
+    private static String user = "root";
+    private static String password = "root";
+    private static MyDataSource datasource = null;
 
     public static MyDataSource createDataSource() {
-        MyDataSource dataSource=new MyDataSource();
-        return  dataSource;
+        MyDataSource dataSource = new MyDataSource();
+        return dataSource;
     }
 
 
-        static {
-            try {
-                Class.forName("com.mysql.jdbc.Driver");
-                datasource = new MyDataSource();
-            } catch (ClassNotFoundException e) {
-                e.printStackTrace();
-            }
-        }
-        public static Connection getConnection() throws SQLException {
-            return datasource.getConnection();
-        }
-
-        public static void free(Connection conn){
-            datasource.free(conn);
+    static {
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            datasource = new MyDataSource();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
         }
     }
+
+    public static Connection getConnection() throws SQLException {
+        return datasource.getConnection();
+    }
+
+    public static void free(Connection conn) {
+        datasource.free(conn);
+    }
+}
 
 
 

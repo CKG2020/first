@@ -6,12 +6,12 @@
 
 <struts>
 
-        <package name="struts1" extends="struts-default">
-            <action name="login" class="LoginAction">
-                <result name="error">/error.jsp</result>
-                <result name="success">/welcome.jsp</result>
-            </action>
-        </package>
+    <package name="struts1" extends="struts-default">
+        <action name="login" class="LoginAction">
+            <result name="error">/error.jsp</result>
+            <result name="success">/welcome.jsp</result>
+        </action>
+    </package>
 
 
     <package name="struts2" extends="struts-default">
@@ -21,7 +21,6 @@
             <result name="register">/test2/registUserWelcome.jsp</result>
         </action>
     </package>
-
 
 
     <package name="struts3" extends="struts-default">

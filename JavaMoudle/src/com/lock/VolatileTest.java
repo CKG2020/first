@@ -24,7 +24,7 @@ public class VolatileTest {
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                    System.out.println(" End=== Thread："+Thread.currentThread().getId());
+                    System.out.println(" End=== Thread：" + Thread.currentThread().getId());
                     latch.countDown();
                 }
             });
@@ -34,7 +34,7 @@ public class VolatileTest {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println("总共耗时:" + (System.currentTimeMillis()-time)+" data="+data.get());
+        System.out.println("总共耗时:" + (System.currentTimeMillis() - time) + " data=" + data.get());
         cachedThreadPool.shutdown();
     }
 }

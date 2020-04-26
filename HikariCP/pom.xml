@@ -10,23 +10,23 @@
     </parent>
 
 
-<!--    <bean id="hikariDataSource">-->
-<!--              class="com.zaxxer.hikari.HikariDataSource" destroy-method="shutdown">-->
-<!--            <constructor-arg>-->
-<!--                <bean class="com.zaxxer.hikari.HikariConfig">-->
-<!--                    <property name="driverClassName" value="${hikaricp.jdbc.driverClassName}"/>-->
-<!--                    <property name="jdbcUrl" value="${hikaricp.url}"/>-->
-<!--                    <property name="username" value="${hikaricp.username}"/>-->
-<!--                    <property name="password" value="${hikaricp.password}"/>-->
-<!--                    <property name="connectionTestQuery" value="${hikaricp.connectionTestQuery}"/>-->
-<!--                    <property name="connectionTimeout" value="${hikaricp.connectionTimeout}"/>-->
-<!--                    <property name="idleTimeout" value="${hikaricp.idleTimeout}"/>-->
-<!--                    <property name="maxLifetime" value="${hikaricp.maxLifetime}"/>-->
-<!--                    <property name="maximumPoolSize" value="${hikaricp.maximumPoolSize}"/>-->
-<!--                    <property name="minimumIdle" value="${hikaricp.minimumIdle}"/>-->
-<!--                </bean>-->
-<!--            </constructor-arg>-->
-<!--        </bean>-->
+    <!--    <bean id="hikariDataSource">-->
+    <!--              class="com.zaxxer.hikari.HikariDataSource" destroy-method="shutdown">-->
+    <!--            <constructor-arg>-->
+    <!--                <bean class="com.zaxxer.hikari.HikariConfig">-->
+    <!--                    <property name="driverClassName" value="${hikaricp.jdbc.driverClassName}"/>-->
+    <!--                    <property name="jdbcUrl" value="${hikaricp.url}"/>-->
+    <!--                    <property name="username" value="${hikaricp.username}"/>-->
+    <!--                    <property name="password" value="${hikaricp.password}"/>-->
+    <!--                    <property name="connectionTestQuery" value="${hikaricp.connectionTestQuery}"/>-->
+    <!--                    <property name="connectionTimeout" value="${hikaricp.connectionTimeout}"/>-->
+    <!--                    <property name="idleTimeout" value="${hikaricp.idleTimeout}"/>-->
+    <!--                    <property name="maxLifetime" value="${hikaricp.maxLifetime}"/>-->
+    <!--                    <property name="maximumPoolSize" value="${hikaricp.maximumPoolSize}"/>-->
+    <!--                    <property name="minimumIdle" value="${hikaricp.minimumIdle}"/>-->
+    <!--                </bean>-->
+    <!--            </constructor-arg>-->
+    <!--        </bean>-->
 
     <groupId>com.example.Hikaricp</groupId>
     <artifactId>demo</artifactId>
@@ -63,7 +63,7 @@
             <groupId>com.zaxxer</groupId>
             <artifactId>HikariCP</artifactId>
             <version>3.4.2</version>
-<!--            <scope>compile</scope>-->
+            <!--            <scope>compile</scope>-->
         </dependency>
     </dependencies>
 

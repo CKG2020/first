@@ -8,7 +8,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 @SpringBootApplication
 public class DemoApplication {
 
-//    private static RedisTemplate redisTemplate;
+    //    private static RedisTemplate redisTemplate;
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
 //        String key = "name";

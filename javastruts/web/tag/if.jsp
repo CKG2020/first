@@ -21,7 +21,7 @@
 <s:elseif test="%{true}">
     <div> Will be excuted here 222</div>
 </s:elseif>
-<s:else >
+<s:else>
     <div> Will not be excuted here 333</div>
 </s:else>
 </body>

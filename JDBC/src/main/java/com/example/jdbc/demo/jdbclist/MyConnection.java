@@ -7,19 +7,20 @@ import java.util.Properties;
 import java.util.concurrent.Executor;
 
 public class MyConnection implements Connection {
-      private  Connection conn;
-      private LinkedList<Connection> pool;
+    private Connection conn;
+    private LinkedList<Connection> pool;
 
-    public MyConnection(Connection conn,LinkedList<Connection>pool) {
-        this.conn=conn;
-        this.pool=pool;
+    public MyConnection(Connection conn, LinkedList<Connection> pool) {
+        this.conn = conn;
+        this.pool = pool;
     }
 
     @Override
     public Statement createStatement() throws SQLException {
-       return null;
+        return null;
     }
-//这个方法必须重写否则空指针异常
+
+    //这个方法必须重写否则空指针异常
     @Override
     public PreparedStatement prepareStatement(String s) throws SQLException {
         return conn.prepareStatement(s);
@@ -57,7 +58,7 @@ public class MyConnection implements Connection {
 
     @Override
     public void close() throws SQLException {
-     pool.add(conn);
+        pool.add(conn);
     }
 
     @Override

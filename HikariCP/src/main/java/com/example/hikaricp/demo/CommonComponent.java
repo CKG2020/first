@@ -15,21 +15,27 @@ import java.util.Map;
 
 /**
  * 公共工具Component
+ * <p>
+ * <p>
+ * key位填类型,value位填传参的值
  *
+ * @param sql
+ * //     * @param param
+ * @return
  */
 //@Component
 //public class CommonComponent {
 //
 //    protected Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    /**
-     * key位填类型,value位填传参的值
-     *
-     * @param sql
+/**
+ * key位填类型,value位填传参的值
+ *
+ * @param sql
 //     * @param param
-     * @return
-     */
-    // 获取JDBC的数据,并返回list数据,每条信息放在Map中
+ * @return
+ */
+// 获取JDBC的数据,并返回list数据,每条信息放在Map中
 //    public List<Map<String, Object>> getJdbcData(String sql, Object[] param) {
 //            public  void getJdbcData(String sql){
 //        Connection conn = null;
