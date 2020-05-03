@@ -1,10 +1,8 @@
 package com.ease.architecture.dao;
 
 import com.ease.architecture.entity.User;
-import io.lettuce.core.api.StatefulRedisConnection;
 import io.lettuce.core.api.sync.RedisCommands;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowCallbackHandler;
 import org.springframework.stereotype.Repository;
@@ -61,19 +59,22 @@ public class UserDao {
             user.setPassword(redisCommands.get(username));
 
                 return user;
-
             }
             else {
             String sql = "SELECT * FROM   User WHERE name=?";
             jdbcTemplate.query(sql, new Object[]{username}, new RowCallbackHandler() {
                 @Override
                 public void processRow(ResultSet resultSet) throws SQLException {
-                    user.setId(resultSet.getString(1));
+//                    user.setId(resultSet.getString(1));
                     user.setName(resultSet.getString(2));
+                    user.setPassword(resultSet.getString(3));
                     redisCommands.set(user.getName(), user.getPassword());
                 }
             });
-            return user;
+            System.out.println("xxxxxxxx");
+            System.out.println(user.getName());
+                return user;
+
         }
 
     }
@@ -90,12 +91,12 @@ public class UserDao {
                 System.out.println("xxxxxxxxxxxxxxxx");
                 user.setName(username);
                 user.setPassword(res);
-                return user;
-            } else {
-                user.setPassword("");
-                System.out.println("密码错误或用户名不正确");
-                return user;
-            }
+                return user;}
+//            } else {
+//                user.setPassword("");
+//                System.out.println("密码错误或用户名不正确");
+//                return null;
+//            }
         }
         else
             {
@@ -105,15 +106,18 @@ public class UserDao {
                 jdbcTemplate.query(sql, new Object[]{username, password}, new RowCallbackHandler() {
                     @Override
                     public void processRow(ResultSet resultSet) throws SQLException {
+                        redisCommands.set(username, password);
                         user.setName(resultSet.getString(2));
                         user.setPassword(resultSet.getString(3));
+
+                        System.out.println(user.getName());
+
                     }
                 });
 
-                    redisCommands.set(user.getName(), user.getPassword());
-                return user;
-                }
 
+                }
+        return user;
 //不足之处要是查询数据库没有的用户的姓名并不能给出提示
         }
 
@@ -126,9 +130,9 @@ public class UserDao {
 //            redisTemplate.opsForHash().delete("user", user.getId());
 //        }
 //        return a;
-        if (redisCommands.exists(user.getName())>0){
+        if (redisCommands.exists(user.getName())<0){
 
-//            redisCommands.del(user.getName());
+            redisCommands.set(user.getName(),user.getPassword());
         }
         return a;
     }

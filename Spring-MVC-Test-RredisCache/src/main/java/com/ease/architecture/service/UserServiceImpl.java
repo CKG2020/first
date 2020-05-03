@@ -31,17 +31,17 @@ public class UserServiceImpl {
 //    }
 //不合理之处::::::每条数据不可以重名
     public boolean register(String username, String password) {
-        final User user = new User();
-        User userByName = findUserByName(username);
-        if (userByName != null ) {
-            return true;
-        }
-        else {
+        final User user =new User();
+
+//        if (user != null ) {
+//            return true;
+//        }
+//        else {
             user.setId(UUID.randomUUID().toString());
             user.setName(username);
             user.setPassword(DigestUtils.md5Hex(password));
             return userDao.insertUser(user) != 0;
-        }
+
     }
 
     public User findByNameAndPassword(String username, String password) {
