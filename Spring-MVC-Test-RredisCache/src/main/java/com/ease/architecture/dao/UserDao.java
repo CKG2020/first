@@ -81,7 +81,6 @@ public class UserDao {
 
 
     public User findByNameAndPassword(String username, String password) {
-
         final User user = new User();
         if (redisCommands.exists(username) > 0)
         {
