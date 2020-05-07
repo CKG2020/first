@@ -9,8 +9,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <%
-    String path = request.getContextPath();
-    String basePath = request.getScheme() + "//" + request.getServerName() + ":" + request.getServerPort() + path + "/";
+ String path=request.getContextPath();
+ String basePath=request.getScheme()+"//"+request.getServerName()+":"+request.getServerPort()+path+"/";
+    System.out.println(basePath);
 %>
 <head>
     <base href="<%=basePath%>">
@@ -28,14 +29,11 @@
 <center>
     <h1>用户列表</h1>
     <table border="1" width="80%">
-        <tr>
-            <td>ID</td>
-            <td>用户名</td>
-        </tr>
+        <tr><td>ID</td> <td>用户名</td></tr>
         <s:iterator value="#request.allUser">
             <tr>
                 <td><s:property value="id"></s:property></td>
-                <td><s:property value="username"></s:property></td>
+                <td><s:property value="username"></s:property> </td>
                 <td><s:if test="superuser==1">普通用户</s:if>
                     <s:elseif test="superuser==2">高权用户</s:elseif>
                     <s:elseif test="superuser==3">管理员</s:elseif>

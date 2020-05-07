@@ -12,7 +12,7 @@
     <title>My JSP 'welcome.jsp' starting page</title>
 </head>
 <body>
-Struts2Demo<br>
+0304180216  陈凯歌<br>
 欢迎您，登陆成功！
 
 </body>

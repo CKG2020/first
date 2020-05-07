@@ -4,9 +4,9 @@ public class Usr {
     /*
      *0232陈志威
      */
-    public int id;
-    public String username;
-    public String password;
+    public  int id;
+    public  String username;
+    public String  password;
     public String email;
     public String tel;
 

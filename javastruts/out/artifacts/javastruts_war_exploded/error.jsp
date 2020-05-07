@@ -21,7 +21,7 @@
 </head>
 
 <body>
-Struts2Demo<br>
+0304180216 陈凯歌<br>
 登录失败！
 </body>
 </html>

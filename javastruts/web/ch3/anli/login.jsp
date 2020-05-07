@@ -8,8 +8,9 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-    String path = request.getContextPath();
-    String basePath = request.getScheme() + "//" + request.getServerName() + ":" + request.getServerPort() + path + "/";
+    String path=request.getContextPath();
+    String basePath=request.getScheme()+"//"+request.getServerName()+":"+request.getServerPort()+path+"/";
+    System.out.println(basePath);
 %>
 
 <html>
@@ -25,15 +26,22 @@
 <body>
 
 <%--<form action="usrLoginAction.action" method="post">--%>
-<%--用户名:<input type="text" name="username"/><br/>--%>
-<%--密码:<<input type="password" name="password" ><br/>--%>
-<%--<input type="submit" value="登录"/>--%>
+    <%--用户名:<input type="text" name="username"/><br/>--%>
+    <%--密码:<<input type="password" name="password" ><br/>--%>
+    <%--<input type="submit" value="登录"/>--%>
 <%--</form>--%>
 <s:form action="usrLoginAction.action" method="post">
     <s:textfield name="username" label="用户名"></s:textfield>
-    <s:textfield name="password" label="密码"></s:textfield>
+    <s:textfield name="password"  label="密码"></s:textfield>
     <s:submit value="登录"></s:submit>
+    <%--<input type="submit" value="登录"/>--%>
 </s:form>
-a
+
+
+<%--<form action="usrLoginAction.action" method="post">--%>
+    <%--用户名:<input type="text" name="username"><br>--%>
+    <%--密 码:<input type="password" name="password"><br>--%>
+    <%--<input type="submit" value="登录"/>--%>
+<%--</form>--%>
 </body>
 </html>

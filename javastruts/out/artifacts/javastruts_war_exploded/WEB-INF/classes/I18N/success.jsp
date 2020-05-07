@@ -1,16 +1,17 @@
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <%--
   Created by IntelliJ IDEA.
   User: ckg
-  Date: 2020/4/16
-  Time: 下午3:39
+  Date: 20-5-6
+  Time: 下午9:02
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Success</title>
 </head>
 <body>
-<h2>欢迎注册用户登陆成功</h2>
+<s:property value="getText('xxx.success')" />
 </body>
 </html>

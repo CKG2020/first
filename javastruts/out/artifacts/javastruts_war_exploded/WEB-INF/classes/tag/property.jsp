@@ -15,8 +15,8 @@
 <body>
 <h2>使用s:push来将某个值放入VAlueStack的栈顶</h2>
 <s:bean name="com.ascent.po.Usr" id="u">
-    <s:param name="username" value="'zhangsan'"/>
-    <s:param name="password" value="1234"/>
+    <s:param name="username" value="'ckg'"/>
+    <s:param name="password" value="0304180216"/>
 </s:bean>
 </body>
 

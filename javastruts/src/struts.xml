@@ -6,15 +6,15 @@
 
 <struts>
 
-    <package name="struts1" extends="struts-default">
-        <action name="login" class="LoginAction">
-            <result name="error">/error.jsp</result>
-            <result name="success">/welcome.jsp</result>
-        </action>
-    </package>
+        <package name="struts1" extends="struts-default">
+            <action name="login" class="LoginAction">
+                <result name="error">/error.jsp</result>
+                <result name="success">/welcome.jsp</result>
+            </action>
+        </package>
 
-
-    <package name="struts2" extends="struts-default">
+<!--用于第一个实验的实验二-->
+    <package name="struts5" extends="struts-default">
         <action name="usrLoginAction" class="test2.action.usrLoginAction">
             <result name="error">/test2/error.jsp</result>
             <result name="admin">/test2/adminWelcome.jsp</result>
@@ -22,15 +22,87 @@
         </action>
     </package>
 
+    <package name="struts2" extends="struts-default">
+        <action name="usrLoginAction" class="ch3.usrLoginAction">
+            <result name="error">/test2/error.jsp</result>
+            <result name="admin">/ch3/anli/adminWelcome.jsp</result>
+            <result name="register">/test2/registUserWelcome.jsp</result>
+        </action>
+
+        <!--<action name="UsrManagerAction" class="ch3.UsrManagerAction" >-->
+            <!--<result name="admin_showusr">/ch3/anli/admin_showusr.jsp</result>-->
+            <!--&lt;!&ndash;<result name="updateuser">/test2/adminWelcome.jsp</result>&ndash;&gt;-->
+            <!--&lt;!&ndash;<result name="updateusers_error">/test2/registUserWelcome.jsp</result>&ndash;&gt;-->
+            <!--&lt;!&ndash;<result name="changesuperuser_error">/test2/registUserWelcome.jsp</result>&ndash;&gt;-->
+            <!--&lt;!&ndash;<result  name="admin_order_user">/ch3/anli/admin_order_user.jsp</result>&ndash;&gt;-->
+            <!--<result name="anli_showuser">/ch3/anli/anli_showuser.jsp</result>-->
+        <!--</action>-->
+
+    </package>
 
     <package name="struts3" extends="struts-default">
-        <action name="*usrManagerAction" class="ch3.UsrManagerAction" method="1">
-            <result name="admin_showusr">/ch3/anli/admin_showusr.jsp</result>
+        <action name="UsrManagerAction" class="ch3.UsrManagerAction" >
+            <!--<result name="admin_showusr">/ch3/anli/admin_showusr.jsp</result>-->
             <!--<result name="updateuser">/test2/adminWelcome.jsp</result>-->
             <!--<result name="updateusers_error">/test2/registUserWelcome.jsp</result>-->
             <!--<result name="changesuperuser_error">/test2/registUserWelcome.jsp</result>-->
             <!--<result  name="admin_order_user">/ch3/anli/admin_order_user.jsp</result>-->
             <result name="anli_showuser">/ch3/anli/anli_showuser.jsp</result>
         </action>
+    </package>
+
+
+
+
+
+<!--i18n的配置-->
+
+    <constant name="struts.custom.i18n.resources" value="LoginAction "/>
+    <package name="struts6" extends="struts-default">
+
+        <action name="Login" class="i18n.action.LoginAction">
+            <result name="input">i18n/login.jsp</result>
+        </action>
+
+        <action name="Login1" class="i18n.struts2.action.LoginAction">
+            <result>i18n/welcome.jsp</result>
+            <result name="error">i18n/error.jsp</result>
+            <result name="input">i18n/login.jsp</result>
+        </action>
+
+        <action name="login1" class="i18n.action2.LoginAction">
+            <result>/welcome1.jsp</result>
+            <result name="error">i18n/error1.jsp</result>
+            <result name="input">i18n/login1.jsp</result>
+        </action>
+
+    </package>
+
+
+
+
+    <!--1、全局的配置方式为： a、在struts.xml中的<constant name="struts.custom.i18n.resources"value="message"></constant>-->
+    <!--指定baseName 国际化文件名称为:baseName_语言名_国家名.properties（如:message_zh_CN.properties）-->
+    <!--b、全局的国际化资源文件放在src以下-->
+    <!---->
+    <constant name="struts.enable.DynamicMethodInvocation" value="false"></constant>
+<!--struts.devMode为开发者模式 true为表示打开  这样的xml更新可以及时反应-->
+    <constant name="struts.devMode" value="true" />
+    <constant name="struts.custom.i18n.resources" value="xxx" />
+
+    <package name="struts4" extends="struts-default" >
+    <action name="Employee"
+            class="I18N.Employee"
+            method="execute">
+        <result name="input">I18N/index.jsp</result>
+        <result name="success">I18N/success.jsp</result>
+    </action>
+
+    <action name="Locale"
+            class="I18N.Locale"
+            method="execute">
+        <result name="success">I18N/index.jsp</result>
+    </action>
+
     </package>
 </struts>

@@ -11,6 +11,7 @@
     <title>Title</title>
 </head>
 <body>
+<h3>你为普通用户</h3>
 <h2>欢迎注册用户登陆成功</h2>
 </body>
 </html>

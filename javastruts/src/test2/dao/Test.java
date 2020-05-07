@@ -12,7 +12,7 @@ import java.sql.SQLException;
 public class Test {
     public static void main(String[] args) throws SQLException {
         UsrDao usrDao = new UsrDao();
-        Boolean a = usrDao.checkUsr("xxx", "12345678");
+      Boolean a=usrDao.checkUsr("xxx","12345678");
 //        System.out.println(usrDao.checkUsr("xxx", "123456"));
 
         System.out.println(a);

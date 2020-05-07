@@ -15,7 +15,7 @@
 <s:form action="" name="form1">
     <s:doubleselect
             label="请选择您喜欢的图书"
-            name="author" list="{'作者1', '作者2'}"
+            name="author" list="{'陈凯歌', '陈哥哥'}"
             doubleList="top == '作者1' ? {'Spring2.0', 'hibernate 3' , 'struts2'} : 			                      {'JavaScript','Ajax in action'}"
             doubleName="book"/>
 </s:form>

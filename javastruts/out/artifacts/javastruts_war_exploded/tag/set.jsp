@@ -22,8 +22,8 @@
 </head>
 <body>
 <s:bean name="test2" id="1">
-    <s:param name="username" value="'zhangsan'"/>
-    <s:param name="password" value="1234"/>
+    <s:param name="username" value="'ckg'"/>
+    <s:param name="password" value="0304180216"/>
 </s:bean>
 讲Stack Context中的u值放入默认值范围内。<br>
 <s:set value="#u" name="usr" scope="request"/>

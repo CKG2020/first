@@ -6,34 +6,31 @@ public class usrLoginAction {
 
     private String username;
     private String password;
-
     public String getPassword() {
         return password;
     }
-
     public void setPassword(String password) {
         this.password = password;
     }
-
     public String getUsername() {
         return username;
     }
-
     public void setUsername(String username) {
         this.username = username;
     }
-
-    public String execute() {
-        UsrDao usrDao = new UsrDao();
-        if (getUsername().equals("ckg") && getPassword().equals("0304180216")) {
-            //我为管理员 其他为注册用户
+    public String execute(){
+        UsrDao usrDao=new UsrDao();
+        if(getUsername().equals("ckg")&& getPassword().equals("0304180216")){
+           //我为管理员 其他为注册用户
             return "admin";
-        } else {
-            if (usrDao.checkUsr(getUsername(), getPassword())) {
+        }
+        else {
+            if (usrDao.checkUsr(getUsername(),getPassword())){
                 return "register";
             }
-            return "error";
+                 return "error";
         }
+
 
 
 //       if(usrDao.checkUsr(getUsername(),getPassword())!=null){

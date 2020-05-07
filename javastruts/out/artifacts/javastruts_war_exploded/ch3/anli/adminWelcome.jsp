@@ -8,8 +8,9 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-    String path = request.getContextPath();
-    String basePath = request.getScheme() + "//" + request.getServerName() + ":" + request.getServerPort() + path + "/";
+    String path=request.getContextPath();
+    String basePath=request.getScheme()+"//"+request.getServerName()+":"+request.getServerPort()+path+"/";
+    System.out.println(basePath);
 %>
 <html>
 <head>
@@ -25,7 +26,12 @@
 </head>
 <body>
 欢迎管理员登录!<br/>
-<s:url id="urll" action="findAllusrManagerAction.action"></s:url>
+<s:url id="urll" action="UsrManagerAction.action" ></s:url>
 <s:a href="%{urll}">用户管理</s:a>
+
+<%--<form action="UsrManagerAction.action" method="post">--%>
+
+    <%--<input type="submit" value="登录"/>--%>
+</form>
 </body>
 </html>
