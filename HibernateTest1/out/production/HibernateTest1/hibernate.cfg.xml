@@ -4,7 +4,7 @@
         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
-        <property name="connection.url">jdbc:mysql://localhost:3306/db1</property>
+        <property name="connection.url">jdbc:mysql://47.94.21.104:3306/db1</property>
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.connection.password">root</property>
@@ -22,13 +22,21 @@
 
 
         <!--3. 加载所有映射-->
-        <!--        <mapping resource="Student.hbm.xml"/>-->
-        <!--        <mapping class="com.example.test.StudentEntity"/>-->
+                <mapping resource="Student.hbm.xml"/>
+                <mapping class="com.example.test.StudentEntity"/>
+
 
         <mapping class="com.example.AddressEntity"/>
         <mapping class="com.example.CustomerEntity"/>
         <mapping resource="AddressEntity.hbm.xml"/>
         <mapping resource="CustomerEntity.hbm.xml"/>
+
+
+
+        <mapping class="com.example.DepartmentAndUsr.DepartmentEntity"/>
+        <mapping class="com.example.DepartmentAndUsr.UsrEntity"/>
+        <mapping resource="Department.hbm.xml"/>
+        <mapping resource="Usr.hbm.xml"/>
 
 
     </session-factory>

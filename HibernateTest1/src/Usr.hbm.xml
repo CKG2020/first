@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.example.DepartmentAndUsr.UsrEntity" table="Usr" schema="db1">
+
+
+        <id name="id" column="id" type="integer">
+            <generator class="native" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="45" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="45" />
+        </property>
+
+        <property name="address" type="string">
+            <column name="address" length="45" />
+        </property>
+        <property name="phone" type="integer">
+            <column name="phone" />
+        </property>
+        <property name="title" type="string">
+            <column name="title" length="45" />
+        </property>
+        <property name="power" type="string">
+            <column name="power" length="45" />
+        </property>
+        <property name="auth" type="string">
+            <column name="auth" length="45" />
+        </property>
+
+        <property name="deptid" type="integer">
+            <column name="deptid" />
+        </property>
+        <property name="homephone" type="integer">
+            <column name="homephone" />
+        </property>
+        <property name="superauth" type="string">
+            <column name="superauth" length="45" />
+        </property>
+        <property name="groupid" type="integer">
+            <column name="groupid" />
+        </property>
+        <property name="birthdate" type="string">
+            <column name="birthdate" length="45" />
+        </property>
+
+
+        <property name="gender" type="string">
+            <column name="gender" length="45" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="45" />
+        </property>
+        <property name="nickname" type="string">
+            <column name="nickname" length="45" />
+        </property>
+
+
+        <many-to-one name="departmentEntity" class="com.example.DepartmentAndUsr.DepartmentEntity"
+        cascade="all" outer-join="false"
+        update="false" insert="false" column="id" not-null="true" />
+
+
+
+    </class>
+</hibernate-mapping>

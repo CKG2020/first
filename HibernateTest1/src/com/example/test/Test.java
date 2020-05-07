@@ -15,8 +15,8 @@ public class Test {
         Transaction transaction = session.beginTransaction();
         StudentEntity student = new StudentEntity();
 //        student.setId(4);
-        student.setName("xxx");
-        student.setStuNum("0304180218");
+        student.setName("ckg");
+        student.setStuNum("0304180216");
         session.save(student);
         transaction.commit();
         session.close();

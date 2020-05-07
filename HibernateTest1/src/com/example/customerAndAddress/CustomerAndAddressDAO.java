@@ -1,8 +1,7 @@
-package com.example.test;
+package com.example.customerAndAddress;
 
 import com.example.AddressEntity;
 import com.example.CustomerEntity;
-import org.hibernate.Hibernate;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -62,15 +61,15 @@ public class CustomerAndAddressDAO {
         AddressEntity address = new AddressEntity();
 //        address.setId(1);
 //        address.setProvice("province1");
-        address.setCity("city1");
-        address.setStreet("street1");
+        address.setCity("city3");
+        address.setStreet("street3");
 //        address.setZipcode("100085");
         //设置Address对象和Customer对象关系
 //        address.setCustomer(customer);
         customer.setName("ckg");
-        customer.setId(1);
+        customer.setId(3);
         //设置Customer对象和Address对象关系
-//        customer.setAddress(address);
+        customer.setAddress(address);
         //测试保存Customer对象
         dao.save(address);
         dao.save(customer);
