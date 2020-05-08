@@ -51,11 +51,11 @@ public class UserAndDeptDAOImpl {
 
 
 
-        pt.setId(1);
-        pt.setName("测试部");
-        pt.setDescription("市场调查人员");
+        pt.setId(2);
+        pt.setName("软件部");
+        pt.setDescription("程序员");
         pt.setStatus("1");
-        pt.setGoal("xxx");
+        pt.setGoal("yyy");
         pt.setUsrs(new HashSet());
 
 
@@ -64,14 +64,14 @@ public class UserAndDeptDAOImpl {
 
         UsrEntity user1 = new UsrEntity();
 //        user1.setId(1);
-        user1.setName("admin");
-        user1.setPassword("123");
-        user1.setAddress("北京");
-        user1.setNickname("管理员");
+        user1.setName("ckg");
+        user1.setPassword("0304180216");
+        user1.setAddress("天津");
+        user1.setNickname("搬砖工1");
         user1.setPhone(10);
         user1.setPower("strong");
         user1.setAuth("xxx");
-        user1.setBirthdate("xxx");
+        user1.setBirthdate("19990124");
         user1.setEmail("xxx");
         user1.setDeptid(1);
         user1.setGender("man");
@@ -87,22 +87,22 @@ public class UserAndDeptDAOImpl {
 
         UsrEntity user2 = new UsrEntity();
 //        user2.setId(1);
-        user2.setName("user_1");
-        user2.setPassword("123");
-        user2.setAddress("秦皇岛");
-        user2.setNickname("李明");
-        user1.setPhone(10);
-        user1.setPower("strong");
-        user1.setAuth("xxx");
-        user1.setBirthdate("xxx");
-        user1.setEmail("xxx");
-        user1.setDeptid(1);
-        user1.setGender("man");
-        user1.setGroupid(10);
-        user1.setHomephone(10);
-        user1.setSuperauth("xxx");
-        user1.setTitle("xxx");
-        user1.setDepartmentEntity(pt);
+        user2.setName("ckg1");
+        user2.setPassword("0304180216");
+        user2.setAddress("天津1");
+        user2.setNickname("搬砖工2");
+        user2.setPhone(10);
+        user2.setPower("strong");
+        user2.setAuth("xxx");
+        user2.setBirthdate("xxx");
+        user2.setEmail("xxx");
+        user2.setDeptid(1);
+        user2.setGender("man");
+        user2.setGroupid(10);
+        user2.setHomephone(10);
+        user2.setSuperauth("xxx");
+        user2.setTitle("xxx");
+        user2.setDepartmentEntity(pt);
 
 
 

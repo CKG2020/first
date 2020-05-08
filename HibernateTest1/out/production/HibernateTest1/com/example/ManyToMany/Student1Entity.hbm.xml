@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.example.ManyToMany.Student1Entity" table="student1" schema="db1">
+        <id name="id" column="id"/>
+
+        <property name="name" column="name"/>
+
+
+        <set name="courses" table="stu_course" catalog="hibernate_anli" cascade="save-update" lazy="false">
+            <key>
+                <column name="stu_id" />
+            </key>
+            <many-to-many entity-name="com.example.ManyToMany.CourseEntity">
+                <column name="course_id" />
+            </many-to-many>
+        </set>
+
+    </class>
+</hibernate-mapping>
