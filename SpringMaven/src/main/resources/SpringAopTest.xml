@@ -5,7 +5,7 @@
     <aop:config>
         <aop:aspect id="log" ref="logging">
             <aop:pointcut id="selectAll"
-                          expression="execution(* com.ease.*.*.*.*(..))"/>
+                          expression="execution(* *.*.*.*(..))"/>
             <aop:before pointcut-ref="selectAll" method="beforeAdvice"/>
             <aop:after pointcut-ref="selectAll" method="afterAdvice"/>
             <aop:after-returning pointcut-ref="selectAll"
@@ -18,11 +18,11 @@
     </aop:config>
 
     <!-- Definition for student bean -->
-    <bean id="student" class="com.ease.archiecture.springaop.Student">
+    <bean id="student" class="springaop.Student">
         <property name="name" value="Zara"/>
         <property name="age" value="11"/>
     </bean>
 
     <!-- Definition for logging aspect -->
-    <bean id="logging" class="com.ease.archiecture.springaop.Logging"/>
+    <bean id="logging" class="springaop.Logging"/>
 </beans>
