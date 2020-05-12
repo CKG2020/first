@@ -19,12 +19,12 @@ public class UserController {
 
 
 
+
     @RequestMapping(value = "test", method = RequestMethod.GET)
     @ResponseBody
     public String test() {
         return "aaaaa";
     }
-
 
 
 
