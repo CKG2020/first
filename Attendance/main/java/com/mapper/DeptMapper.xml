@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.inspur.attd.mapper.DeptMapper" >
+	<resultMap id="BaseResultMap" type="Dept" >
+		<result column="id" property="id" />
+		<result column="department_id" property="departmentId" />
+		<result column="department_name" property="departmentName"  />
+		<result column="manager" property="manager"  />
+		<result column="total_user" property="totalUser"  />
+		<result column="create_time" property="createTime"  />
+	</resultMap>
+
+	<select id="deptFind" parameterType="HashMap" resultMap="BaseResultMap">
+    select * from t_department where 1=1
+		<!--<if test="departmentName !=null and departmentName != '' ">
+       and department_name  like concat('%',#{departmentName},'%')
+		</if>	-->
+	</select>
+	
+	<insert id="AddDept" parameterType="Dept">
+    insert into  t_department
+    (department_id,department_name,manager,create_time)
+    values 
+    (#{departmentId},#{departmentName},#{manager},#{createTime})
+  </insert>
+  
+   <delete id="deletedept" >
+     delete  from t_department  where id in
+        <foreach collection="array" item="ids" index="no" open="("
+			separator="," close=")">
+			#{ids}
+		</foreach>
+  </delete>
+ <!-- 根据用户编号查询信息 -->
+  <select id="getdeptById" parameterType="Integer"  resultMap="BaseResultMap">
+     select * from t_department where id=#{id}
+  </select>
+   <!-- 信息修改-->
+  <update id="updateDept" parameterType="Dept">
+    update t_department set department_id=#{departmentId},department_name=#{departmentName},manager=#{manager}
+    where id =#{id}
+  </update>
+</mapper>
