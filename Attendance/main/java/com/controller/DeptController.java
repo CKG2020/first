@@ -23,6 +23,10 @@ public class DeptController {
 	@Autowired
 	private DeptService deptService;
 
+
+
+
+
 	@RequestMapping(value = "/deptFind")
 	public String deptFind(HttpSession session,
 			@RequestParam(value = "pn", defaultValue = "1") Integer pn,
@@ -45,6 +49,11 @@ public class DeptController {
 
 		return "/dept/deptSearch.jsp";
 	}
+
+
+
+
+
 	@RequestMapping(value = "/deptAdd")
 	public String deptAdd(Dept dept, Model model) {
 
@@ -61,11 +70,20 @@ public class DeptController {
 
 		return "/dept/deptInsert.jsp";
 	}
+
+
+
+
 	@RequestMapping(value = "/deleteDept")
 	public String deleteDept(String ids[]) {
 		deptService.deletedept(ids);
 		return "redirect:/deptFind";
 	}
+
+
+
+
+
 	@RequestMapping(value = "/modifyDept")
 	public String modifyDept(String id, Model model) {
 		Dept dept = new Dept();
@@ -74,11 +92,15 @@ public class DeptController {
 		model.addAttribute("dept", dept);
 		return "dept/deptUpdate.jsp";
 	}
+
+
+
 	@RequestMapping(value = "/UpdateDept")
 	public String UpdateDept(Dept dept, Model model) {
 		deptService.updateDept(dept);
 		model.addAttribute("message","修改成功");
 		model.addAttribute("saveFlag", "1");
 		return "/dept/deptUpdate.jsp";
+
 	}
 }

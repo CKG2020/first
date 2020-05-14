@@ -40,5 +40,5 @@
 <aop:config>
 	<aop:advisor advice-ref="txAdvice" pointcut="execution(* com.service.impl.*.*(..))"/>
 </aop:config>
-	<jdbc:embedded-database id="dataSource"/>
+	<jdbc:embedded-database id="dataSource1"/>
 </beans>
