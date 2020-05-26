@@ -7,7 +7,7 @@ import java.util.Map.Entry;
 
 public class TestRedis {
 
-    private static final String SERVER_ADDRESS = "192.168.137.18"; // 服务器地址
+    private static final String SERVER_ADDRESS = "127.0.0.1"; // 服务器地址
     private static final Integer SERVER_PORT = 6379; // 端口
 
     private Jedis jedis;

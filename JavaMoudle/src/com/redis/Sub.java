@@ -44,9 +44,13 @@ public class Sub extends JedisPubSub {
         jedis.connect();
         Sub client1 = new Sub();
         jedis.subscribe(client1, "news");
+        jedis.subscribe(client1, "milk");
         System.out.println("----------------");
         String message = null;
         client1.onMessage("news", "message");
+        client1.onMessage("milk", "message");
+
+        client1.onPMessage("news","news","message");
 
         jedis.disconnect();
     }
