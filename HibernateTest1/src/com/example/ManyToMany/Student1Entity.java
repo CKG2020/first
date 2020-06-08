@@ -2,12 +2,22 @@ package com.example.ManyToMany;
 
 import javax.persistence.*;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 @Table(name = "student1", schema = "db1", catalog = "")
 public class Student1Entity {
     private int id;
     private String name;
+    private Set<Object> courses;
+
+    public Set<Object> getCourses() {
+        return courses;
+    }
+
+    public void setCourses(Set<Object> courses) {
+        this.courses = courses;
+    }
 
     @Id
     @Column(name = "id")
