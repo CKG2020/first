@@ -73,6 +73,20 @@ public class StudentEntity {
                 Objects.equals(saddress, that.saddress);
     }
 
+
+    @Override
+    public String toString() {
+        return "StudentEntity{" +
+                "sid=" + sid +
+                ", sname='" + sname + '\'' +
+                ", ssex='" + ssex + '\'' +
+                ", sdept='" + sdept + '\'' +
+                ", sage=" + sage +
+                ", saddress='" + saddress + '\'' +
+                ", studcourse=" + studcourse +
+                '}';
+    }
+
     @Override
     public int hashCode() {
         return Objects.hash(sid, sname, ssex, sdept, sage, saddress);

@@ -15,31 +15,16 @@ public class TestMain {
 
 
         Configuration config = new Configuration().configure("com/example/hsqTest/hibernate.cfg.xml");
-        //创建服务注册对象
-//        ServiceRegistry serviceRegistry = new ServiceRegistryBuilder().applySettings(config.getProperties()).buildServiceRegistry();
-        //创建会话工厂对象
+
         SessionFactory    sessionFactory = config.buildSessionFactory();
-        //会话对象
+
         Session      session = sessionFactory.openSession();
 
         Transaction     transaction = session.beginTransaction();
-//        Transaction tx = null;
-//        try {
-//            tx = session.beginTransaction();
-//            session.save(customer);
-//            tx.commit();
-//        } catch (Exception e) {
-//            if (tx != null) {
-//                tx.rollback();
-//            }
-//        } finally {
-//            session.close();
-//        }
+
 
         try {
-//            session = HibernateSessionFactory.getSession();
-//            transaction = session.beginTransaction();
-            // 1.检索所有学生
+
             List<StudentEntity> list = session.createQuery("from StudentEntity ").list();
             transaction.commit();
 

@@ -5,6 +5,17 @@ import java.util.Objects;
 public class StudCourseEntity {
     private int stuCourseId;
     private int grade;
+
+//    @Override
+//    public String toString() {
+//        return "StudCourseEntity{" +
+//                "stuCourseId=" + stuCourseId +
+//                ", grade=" + grade +
+//                ", student=" + student +
+//                ", course=" + course +
+//                '}';
+//    }
+
     private StudentEntity student;
 
     private CourseEntity course;
