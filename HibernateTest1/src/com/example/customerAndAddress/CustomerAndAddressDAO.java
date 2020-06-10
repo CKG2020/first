@@ -66,8 +66,8 @@ public class CustomerAndAddressDAO {
 //        address.setZipcode("100085");
         //设置Address对象和Customer对象关系
 //        address.setCustomer(customer);
-        customer.setName("ckg");
-        customer.setId(3);
+        customer.setName("brh");
+        customer.setId(4);
         //设置Customer对象和Address对象关系
         customer.setAddress(address);
         //测试保存Customer对象

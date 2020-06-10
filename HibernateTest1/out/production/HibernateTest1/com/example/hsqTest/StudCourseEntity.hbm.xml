@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.example.hsqTest.StudCourseEntity" table="studCourse" schema="db2">
+        <id name="stuCourseId" column="stuCourseId"/>
+        <property name="grade" column="grade"/>
+        <many-to-one name="student" class="com.example.hsqTest.StudentEntity">
+            <column name="sid" not-null="true"/>
+        </many-to-one>
+
+        <many-to-one name="course" class="com.example.hsqTest.CourseEntity">
+            <column name="cid" not-null="true"/>
+        </many-to-one>
+
+
+    </class>
+</hibernate-mapping>
