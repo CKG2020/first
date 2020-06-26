@@ -2,7 +2,7 @@ package com.lock;
 
 public class SingletonDemo {
 
-    private static SingletonDemo instance = null;
+    private    static volatile   SingletonDemo instance = null;
 
     private SingletonDemo() {
         System.out.println(Thread.currentThread().getName() + "\t" + "我是构造方法");
@@ -10,7 +10,7 @@ public class SingletonDemo {
 
     //此处添加synchronized
     public static SingletonDemo getInstance() {
-        //或者dcl双端锁机制但不保证线程安全  因为会引发指令重排  地址为空和地址所在的内容为空是里两种情况
+        //或者dcl双端锁机制但不保证线程安全  由于指令重排  地址为空和地址所在的内容为空是里两种情况
         //此时需要在单例对象前面加volatile禁止指令重排 不会引发线程安全
         if (instance == null) {
             synchronized (SingletonDemo.class) {

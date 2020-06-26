@@ -61,13 +61,13 @@ public class CustomerAndAddressDAO {
         AddressEntity address = new AddressEntity();
 //        address.setId(1);
 //        address.setProvice("province1");
-        address.setCity("city3");
-        address.setStreet("street3");
+        address.setCity("HeNan");
+        address.setStreet("PingDingShan");
 //        address.setZipcode("100085");
         //设置Address对象和Customer对象关系
 //        address.setCustomer(customer);
-        customer.setName("brh");
-        customer.setId(4);
+        customer.setName("Ckg");
+        customer.setId(5);
         //设置Customer对象和Address对象关系
         customer.setAddress(address);
         //测试保存Customer对象

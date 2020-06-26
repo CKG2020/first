@@ -16,7 +16,8 @@ public class Mydate {
         System.out.println(number);
     }
 
-    public synchronized void incr() {
+//    public synchronized void incr() {
+public  void incr() {
         number++;
 //锁太重le
     }

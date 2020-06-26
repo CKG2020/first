@@ -33,8 +33,8 @@ public class MyServer {
 	public static long VERSION = 23234l;
 	
 	public static void main(String[] args) throws IOException {
-		final Server server = RPC.getServer(new Biz(), "127.0.0.1", PORT, new Configuration());
-		server.start();
+//		final Server server = RPC.getServer(new Biz(), "127.0.0.1", PORT, new Configuration());
+//		server.start();
 	}
 
 }

@@ -6,7 +6,7 @@
         <datasource-map>
           <unit-entry name="a.xml" value="d95110bc-bd33-4375-8a97-178e1e3477a6" />
           <unit-entry name="com:example:hsqTest:hibernate.cfg.xml" value="94aa8e58-d8ad-4545-a26e-d8b7c8e3c489" />
-          <unit-entry name="hibernate.cfg.xml" value="d95110bc-bd33-4375-8a97-178e1e3477a6" />
+          <unit-entry name="hibernate.cfg.xml" value="35d3804f-5609-475c-b749-3069c7666aa0" />
         </datasource-map>
         <naming-strategy-map />
         <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/com/example/hsqTest/hibernate.cfg.xml" />

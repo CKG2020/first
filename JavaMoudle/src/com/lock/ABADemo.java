@@ -5,26 +5,27 @@ import java.util.concurrent.atomic.AtomicReference;
 import java.util.concurrent.atomic.AtomicStampedReference;
 
 public class ABADemo {
+
     static AtomicReference<Integer> atomicReference = new AtomicReference<Integer>(100);
     static AtomicStampedReference<Integer> atomicStampedReference = new AtomicStampedReference<Integer>(100, 1);
 
     public static void main(String[] args) {
-        System.out.println("==============ABA问题的产生==========");
-        new Thread(() -> {
-            atomicReference.compareAndSet(100, 101);
-            atomicReference.compareAndSet(101, 100);
-        }, "t1").start();
-
-        new Thread(() -> {
-            try {
-                TimeUnit.SECONDS.sleep(1);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-
-            System.out.println(atomicReference.compareAndSet(100, 2020) +
-                    "\t" + atomicReference.get());
-        }, "t2").start();
+//        System.out.println("==============ABA问题的产生==========");
+//        new Thread(() -> {
+//            atomicReference.compareAndSet(100, 101);
+//            atomicReference.compareAndSet(101, 100);
+//        }, "t1").start();
+//
+//        new Thread(() -> {
+//            try {
+//                TimeUnit.SECONDS.sleep(1);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//
+//            System.out.println(atomicReference.compareAndSet(100, 2020) +
+//                    "\t" + atomicReference.get());
+//        }, "t2").start();
 
         System.out.println("============ABA问题的解决==========");
         new Thread(() -> {
@@ -55,9 +56,9 @@ public class ABADemo {
         }, "t4").start();
 
 
-//        while (Thread.activeCount()>2){
-//            Thread.yield();
-//        }
+        while (Thread.activeCount()>2){
+            Thread.yield();
+        }
     }
 
 
