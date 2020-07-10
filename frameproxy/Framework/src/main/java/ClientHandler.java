@@ -10,14 +10,14 @@ import io.netty.channel.SimpleChannelInboundHandler;
  * @modifier:
  * @since:
  */
-public class ClientHandler extends SimpleChannelInboundHandler<String> {
-//    @Override
-//    protected void channelRead0(ChannelHandlerContext ctx, String s) throws Exception {
+//public class ClientHandler extends SimpleChannelInboundHandler<String> {
+////    @Override
+////    protected void channelRead0(ChannelHandlerContext ctx, String s) throws Exception {
+////
+////    }
 //
+//    protected void messageReceived(ChannelHandlerContext ctx, String msg) throws Exception {
+//        //打印服务端的发送数据
+//        System.out.println(msg);
 //    }
-
-    protected void messageReceived(ChannelHandlerContext ctx, String msg) throws Exception {
-        //打印服务端的发送数据
-        System.out.println(msg);
-    }
-}
+//}

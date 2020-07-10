@@ -5,12 +5,12 @@ import io.netty.channel.group.ChannelGroup;
 import io.netty.channel.group.DefaultChannelGroup;
 import io.netty.util.concurrent.GlobalEventExecutor;
 
-public class ServerHandler extends SimpleChannelInboundHandler<String> {
-    @Override
-    protected void messageReceived(ChannelHandlerContext ctx, String msg) throws Exception {
-
-
-    }
+//public class ServerHandler extends SimpleChannelInboundHandler<String> {
+//    @Override
+//    protected void messageReceived(ChannelHandlerContext ctx, String msg) throws Exception {
+//
+//
+//    }
 
     /**
      //     * 所有的活动用户
@@ -135,7 +135,7 @@ public class ServerHandler extends SimpleChannelInboundHandler<String> {
 //
 //        System.out.println("[" + channel.remoteAddress() + "]: " + msg + "\n");
 //    }
-}
+
 //        ServerSocket serverSocket = new ServerSocket(port);
 //        while (true) {
 //            Socket accept = serverSocket.accept();

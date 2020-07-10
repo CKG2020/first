@@ -17,7 +17,11 @@ public class UsrDao {
     public List<User> findAllUser() {
         List<User> list = new ArrayList<User>();
         User u = null;
-        String sql = "select * from User";
+
+
+        string a=request.getparameter();
+
+        String sql = "select * from teacher";
         try {
             conn = DBConn.getConnection();
             stat = conn.prepareStatement(sql);
