@@ -1,4 +1,4 @@
-package com;
+package com.propertiesTest;
 
 import java.io.*;
 import java.util.Enumeration;

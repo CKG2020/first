@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<user id="1">
-    <loginName>admin@qq.com</loginName>
-    <password>123123</password>
-    <username>超级管理员</username>
-    <createDate>2017-03-07</createDate>
-</user>
+
+<book id="1">
+    <name>Java核心技术</name>
+    <author>Cay S. Horstmann</author>
+    <isbn lang="CN">1234567</isbn>
+    <tags>
+        <tag>Java</tag>
+        <tag>Network</tag>
+    </tags>
+    <pubDate/>
+</book>

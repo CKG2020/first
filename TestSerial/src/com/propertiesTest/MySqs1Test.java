@@ -1,9 +1,8 @@
-package com;
+package com.propertiesTest;
 
 
 
 import java.io.*;
-import java.util.Map;
 import java.util.Properties;
 
 class Card  implements Serializable {
@@ -97,6 +96,8 @@ public class MySqs1Test {
         try {
             pro.load(new FileReader(MySqs1Test.class.getClassLoader()
                     .getResource("xxxx.properties").getPath()));
+            System.out.println(MySqs1Test.class.getClassLoader()
+                    .getResource("xxxx.properties").getPath());
         } catch (IOException e) {
             e.printStackTrace();
         }

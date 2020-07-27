@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<beans>
-    <bean id="me" class="com.FengSpring.using.User">
+<!--<beans>-->
+    <!--<bean id="me" class="com.FengSpring.using.User">-->
 
+    <!--</bean>-->
+<!--</beans>-->
+<beans>
+    <!--<bean id="u" class="FengSpring.using.UserDaoImpl"></bean>-->
+    <bean id="u" class="FengSpring.using.UserDao"></bean>
+    <bean id="userService" class="FengSpring.using.UserService">
+        <property name="userDao" bean="u"/>
     </bean>
 </beans>

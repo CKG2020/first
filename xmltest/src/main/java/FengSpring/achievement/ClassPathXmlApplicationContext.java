@@ -1,4 +1,4 @@
-package com.FengSpring.achievement;
+package FengSpring.achievement;
 
 import org.jdom.Document;
 import org.jdom.Element;
@@ -15,14 +15,21 @@ import java.util.Map;
 public class ClassPathXmlApplicationContext implements  BeanFactory {
  private Map<String,Object> beans=new HashMap<>();
 
-public ClassPathXmlApplicationContext() throws JDOMException, IOException, ClassNotFoundException, IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException {
+public ClassPathXmlApplicationContext() throws JDOMException, IOException,
+        ClassNotFoundException, IllegalAccessException, InstantiationException,
+        NoSuchMethodException, InvocationTargetException {
 //   使用JDOM首先要指定使用什么解析器
     SAXBuilder saxBuilder = new SAXBuilder();
     Document document = saxBuilder.build(this.getClass().getClassLoader().getResourceAsStream("user.xml"));
     Element root = document.getRootElement();
     List list = root.getChildren("bean");
+
+
+
+
     for (int i = 0; i <list.size() ; i++) {
         Element element= (Element)list.get(i);
+
         String id = element.getAttributeValue("id");
         String clazz = element.getAttributeValue("class");
 
@@ -45,9 +52,6 @@ for (Element propertyElement:(List<Element>)element.getChildren("property")){
 
 
 }
-
-
-
 
     }
 

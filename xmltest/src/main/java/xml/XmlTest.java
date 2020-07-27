@@ -1,19 +1,15 @@
-package com.FourDataFormat.xml;
+package xml;
 
 //import org.apache.ibatis.io.Resources;
-import org.apache.ibatis.io.Resources;
+
 import org.dom4j.Attribute;
 import org.dom4j.Document;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 
-import javax.annotation.Resource;
-import java.io.File;
-import java.io.FileReader;
 import java.io.InputStream;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-import java.sql.Connection;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.List;
@@ -27,7 +23,7 @@ public class XmlTest {
         User user = new User();
         // 获得User的class对象，后续要使用反射
         Class clazz = user.getClass();
-//Resources.getResourceAsStream("config/mybatis.xml")
+//        第一种测试
 //        File file = new File(XmlTest.class.getClassLoader()
 //                .getResource("admin.xml").getPath());
 

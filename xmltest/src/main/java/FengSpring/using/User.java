@@ -1,4 +1,4 @@
-package com.FengSpring.using;
+package FengSpring.using;
 
 public class User {
     private String username;
