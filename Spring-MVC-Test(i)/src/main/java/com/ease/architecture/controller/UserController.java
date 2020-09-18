@@ -35,8 +35,9 @@ public class UserController {
         if (user == null || user.getName() == null) {
             return "用户不存在或用户名、密码错误";
         }
-        return "hello" + user.getName();
+        return "hello" + uername;
     }
+
 
     @RequestMapping(value = "registry", method = RequestMethod.POST)
     @ResponseBody

@@ -1,5 +1,6 @@
 package com.ease.architecture.config;
 
+import com.ease.architecture.entity.User;
 import io.lettuce.core.RedisClient;
 import io.lettuce.core.RedisURI;
 import io.lettuce.core.api.StatefulRedisConnection;
@@ -45,14 +46,14 @@ public class RedisConfig {
 
     }
 
-
-
+//
+//
 //
 //    @Bean
 //    RedisConnectionFactory lettuceConnectionFactory() {
 //        return new LettuceConnectionFactory();
 //    }
-
+//
 //    @Bean
 //    public RedisTemplate<String, User> redisTemplate(RedisConnectionFactory factory) {
 //        RedisTemplate<String, User> template = new RedisTemplate<String, User>();
